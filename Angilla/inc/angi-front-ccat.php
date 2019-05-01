@@ -9218,7 +9218,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
                               ),
                               apply_filters( 'tc_credit_link',
                                   sprintf( '<span class="tc-credits-text">%1$s </span> &middot;',
-                                      sprintf( __('Designed with the %s', 'angilla'), sprintf( '<a class="angi-designer-link" href="%1$s" title="%2$s">%2$s</a>', esc_url( ANGI_WEBSITE . 'angilla' ), __('Angilla', 'angilla') ) )
+                                      sprintf( __('Designed with the %s', 'angilla'), sprintf( '<a class="angi-designer-link" href="%1$s" title="%2$s">%2$s</a>', esc_url( ANGI_WEBSITE ), __('Angilla', 'angilla') ) )
                                   )
                               )
   					   )
