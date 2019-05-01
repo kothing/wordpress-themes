@@ -5,7 +5,7 @@
  * Displays all of the head element and everything up until the header.tc-header div.
  *
  * @package Angilla
- * @since Angilla 3.5
+ * @since Angilla 1.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>

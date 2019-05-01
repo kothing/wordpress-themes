@@ -34,7 +34,6 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * hook : after_setup_theme
     *
     * @package Angilla
-    * @since Angilla 3.3+
     */
     function angi_fn_set_plugins_supported() {
       //add support for plugins (added in v3.1+)
@@ -66,7 +65,6 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * This function handles the following plugins compatibility : Jetpack (for the carousel addon and photon), Bbpress, Qtranslate, Woocommerce
     *
     * @package Angilla
-    * @since Angilla 3.0.15
     */
     function angi_fn_plugins_compatibility() {
       /* Unlimited Featured Pages  */
@@ -160,7 +158,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Jetpack compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_jetpack_compat() {
       //Photon jetpack's module conflicts with our smartload feature:
@@ -186,7 +184,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * BBPress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_bbpress_compat() {
       if ( ! function_exists( 'angi_fn_bbpress_is_bbpress' ) ) {
@@ -261,7 +259,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * BuddyPress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_buddypress_compat() {
       add_filter( 'angi_are_comments_enabled', 'angi_fn_buddypress_disable_comments' );
@@ -294,7 +292,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * QtranslateX compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_qtranslatex_compat() {
       function angi_fn_url_lang($url) {
@@ -352,7 +350,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Polylang compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_polylang_compat() {
 
@@ -444,7 +442,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * WPML compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_wpml_compat() {
       //credits : @Srdjan
@@ -689,7 +687,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * The Events Calendar compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_the_events_calendar_compat() {
       /*
@@ -783,7 +781,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * OptimizePress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_optimizepress_compat() {
       add_action('wp_print_scripts', 'angi_fn_op_dequeue_fancybox_js');
@@ -803,7 +801,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Sensei compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_sensei_compat() {
       //unkooks the default sensei wrappers and add angilla's content wrapper and action hooks
@@ -846,7 +844,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Woocommerce compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_woocomerce_compat() {
       //unkooks the default woocommerce wrappersv and add angilla's content wrapper and action hooks
@@ -1145,7 +1143,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Visual Composer compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_vc_compat() {
       //link smooth scroll: exclude all anchor links inside vc wrappers (.vc_row)
@@ -1173,7 +1171,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Disqus Comment System compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_disqus_compat() {
       if ( ! function_exists( 'angi_fn_disqus_comments_enabled' ) ) {
@@ -1209,7 +1207,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Ultimate Responsive Image Slider compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_uris_compat() {
       add_filter ( 'angi_img_smart_load_options', 'angi_fn_uris_disable_img_smartload' ) ;
@@ -1234,7 +1232,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * LearnPress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_lp_compat() {
       //do nothing if is admin
@@ -1327,12 +1325,11 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     /* same in angi classic */
     /**
     * TC Unlimited Featured Pages compat hooks
-    * Since Angilla 3.4.24 we changed the functions and class prefixes
     * Olf fpu versions might refer to them throwing PHP errors
     * with the code below we basically "soft-disable" the plugin
     * without actyally disabling it to allow the user to update it
     * @package Angilla
-    * @since Angilla 3.4.24
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_tc_unlimited_featured_pages_compat() {
       //This has to be fired after : tc_generates_featured_pages | 10 (priority)

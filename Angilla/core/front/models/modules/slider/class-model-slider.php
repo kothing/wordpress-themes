@@ -137,7 +137,7 @@ class ANGI_slider_model_class extends ANGI_Model {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.0.15
+  * @since Angilla 1.0
   *
   */
   protected function angi_fn_get_the_slides( $slider_name_id, $img_size ) {
@@ -183,7 +183,7 @@ class ANGI_slider_model_class extends ANGI_Model {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.0.15
+  * @since Angilla 1.0
   *
   */
   protected function angi_fn_get_single_slide_model( $slider_name_id, $_loop_index , $id , $img_size = 'slider-full' ) {
@@ -431,7 +431,7 @@ class ANGI_slider_model_class extends ANGI_Model {
   * @return  array of css classes
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   */
   function angi_fn_get_slider_inner_class( $queried_id ) {
     $class = array( 'carousel-inner' );
@@ -622,7 +622,7 @@ class ANGI_slider_model_class extends ANGI_Model {
   * @return  boolean
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   */
   function angi_fn_slider_exists( $slider ){
     //if the slider not longer exists or exists but is empty, return false
@@ -653,7 +653,7 @@ class ANGI_slider_model_class extends ANGI_Model {
   * @return number height value
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   */
   function angi_fn_set_demo_slider_height( $_h ) {
     //this custom demo height is applied when :
@@ -767,7 +767,7 @@ class ANGI_slider_model_class extends ANGI_Model {
   * @return css string
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   function angi_fn_user_options_style_cb( $_css ) {
     $slider_name_id     =  angi_fn_get_current_slider( $this -> angi_fn_get_real_id() ) ;

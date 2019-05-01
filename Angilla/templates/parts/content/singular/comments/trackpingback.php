@@ -3,7 +3,7 @@
  * The template for displaying the single track-pingback in the list of comments
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 /* Case we're displaying a track or ping back */
 ?>

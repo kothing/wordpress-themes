@@ -124,7 +124,7 @@ class ANGI_post_metas_model_class extends ANGI_Model {
   * Return the date post metas
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   protected function angi_fn_get_meta_date( $pub_or_update = 'publication', $_format = '', $permalink = false, $only_text ) {
     if ( 'short' == $_format ) {
@@ -158,7 +158,7 @@ class ANGI_post_metas_model_class extends ANGI_Model {
   * Return the post author metas
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   private function angi_fn_get_meta_author( $get_avatar = false ) {
     $author_id = get_the_author_meta( 'ID' );
@@ -207,7 +207,7 @@ class ANGI_post_metas_model_class extends ANGI_Model {
   * @param  hierarchical tax boolean => true = categories like, false = tags like
   *
   * @package Angilla
-  * @since Angilla 3.0
+  * @since Angilla 1.0
   */
   private function angi_fn_meta_generate_tax_list( $hierarchical, $limit = false ) {
     $post_terms = $this -> angi_fn_get_term_of_tax_type( $hierarchical, $limit );
@@ -224,7 +224,7 @@ class ANGI_post_metas_model_class extends ANGI_Model {
   * @param  $term object
   *
   * @package Angilla
-  * @since Angilla 3.3.2
+  * @since Angilla 1.0
   */
   private function angi_fn_meta_term_view( $term ) {
     $_is_hierarchical  =  is_taxonomy_hierarchical( $term -> taxonomy );
@@ -255,7 +255,7 @@ class ANGI_post_metas_model_class extends ANGI_Model {
   * @return boolean (false) or array
   * @param  boolean : hierarchical or not
   * @package Angilla
-  * @since Angilla 3.1.20
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_get_term_of_tax_type( $hierarchical = true, $limit = false ) {
@@ -323,7 +323,7 @@ class ANGI_post_metas_model_class extends ANGI_Model {
   * @return boolean (false)
   * @param  $post_type, $_tax_object
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_is_tax_authorized( $_tax_object , $post_type ) {

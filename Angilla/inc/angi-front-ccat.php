@@ -32,7 +32,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
 		* @return  void
 		*
 		* @package Angilla
-		* @since Angilla 3.2.6
+		* @since Angilla 1.0
 		*/
     function angi_fn_set_header_hooks() {
 
@@ -77,7 +77,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * Set customizer user options
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_header_options() {
       //Set some body classes
@@ -99,7 +99,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * Since WP 4.3 : let WP do the job if user has set the WP site_icon setting.
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_favicon_display() {
      	//is there a WP favicon set ?
@@ -150,7 +150,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
 		*
 		*
 		* @package Angilla
-		* @since Angilla 3.2.3
+		* @since Angilla 1.0
 		*/
 		function angi_fn_prepare_logo_title_display() {
       $logos_type = array( '_sticky_', '_');
@@ -222,7 +222,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
 		* Title view
 		*
 		* @package Angilla
-		* @since Angilla 3.2.3
+		* @since Angilla 1.0
 		*/
 		function angi_fn_title_view( $logo_classes ) {
 			ob_start();
@@ -253,7 +253,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * @return  filtered string
     *
     * @package Angilla
-    * @since Angilla 3.2.9
+    * @since Angilla 1.0
     */
     function angi_fn_logo_img_view( $_args ){
       //Extracts $args : logo_src, logo_resize, logo_attachment_id, logo_width, logo_height, logo_type
@@ -281,7 +281,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * Logo view
     *
     * @package Angilla
-    * @since Angilla 3.2.3
+    * @since Angilla 1.0
     */
     function angi_fn_logo_view( $_args ) {
         //Exctracts $args : $logo_class, $logos_img (array of <img>)
@@ -315,7 +315,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
 		* Uses the resp parameter for __navbar action.
 		*
 		* @package Angilla
-		* @since Angilla 3.0.10
+		* @since Angilla 1.0
 		*/
 		function angi_fn_navbar_display() {
 			$_navbar_classes = implode( " ", apply_filters( 'tc_navbar_wrapper_class', array('navbar-wrapper', 'clearfix', 'span9') ) );
@@ -359,7 +359,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
   	* Original function : ANGI_header::tc_navbar_display
   	*
   	* @package Angilla
-  	* @since Angilla 3.2.0
+  	* @since Angilla 1.0
   	*/
   	function angi_fn_new_menu_view() {
     	$_navbar_classes = implode( " ", apply_filters( 'tc_navbar_wrapper_class', array('navbar-wrapper', 'clearfix', 'span9') ) );
@@ -387,7 +387,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
 		*
 		*
 		* @package Angilla
-		* @since Angilla 3.0.10
+		* @since Angilla 1.0
 		*/
     function angi_fn_social_in_header($resp = null) {
         //when do we display this block ?
@@ -417,7 +417,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
 		*
 		*
 		* @package Angilla
-		* @since Angilla 3.0
+		* @since Angilla 1.0
 		*/
 		function angi_fn_tagline_display() {
       //do not display tagline if the related option is false or no tagline available
@@ -454,7 +454,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * hook : __after_header hook
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_reset_margin_top_after_sticky_header() {
       echo apply_filters(
@@ -476,7 +476,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.2.6
+    * @since Angilla 1.0
     */
 		function angi_fn_write_header_inline_css( $_css ) {
       //TOP BORDER
@@ -540,7 +540,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * Callback of body_class hook
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_add_body_classes($_classes) {
       //STICKY HEADER
@@ -570,7 +570,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
    	* Callback for tc_header_classes filter
    	*
    	* @package Angilla
-   	* @since Angilla 3.2.0
+   	* @since Angilla 1.0
    	*/
 		function angi_fn_set_header_classes( $_classes ) {
 			//backward compatibility (was not handled has an array in previous versions)
@@ -600,7 +600,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
     * Returns a boolean wheter we're using or not a specific sticky logo
     *
     * @package Angilla
-    * @since Angilla 3.2.9
+    * @since Angilla 1.0
     */
     function angi_fn_use_sticky_logo(){
         if ( ! esc_attr( angi_fn_opt( "tc_sticky_logo_upload") ) )
@@ -619,7 +619,7 @@ if ( ! class_exists( 'ANGI_header_main' ) ) :
    	* Callback for tc_logo_class
    	*
    	* @package Angilla
-   	* @since Angilla 3.2.0
+   	* @since Angilla 1.0
    	*/
 		function angi_fn_set_logo_title_layout( $_classes ) {
 			//backward compatibility (was not handled has an array in previous versions)
@@ -667,7 +667,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook : wp
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_menu_hooks() {
       if ( (bool) angi_fn_opt('tc_hide_all_menus') )
@@ -738,7 +738,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook : '__navbar'
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_menu_display() {
       ob_start();
@@ -923,7 +923,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     *
     * @return html string
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     function angi_fn_wp_nav_menu_view( $args ) {
       extract( $args );
@@ -964,7 +964,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook : tc_navbar_wrapper_class hook
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_menu_style_options( $_classes ) {
       $_classes = ( ! wp_is_mobile() && 0 != esc_attr( angi_fn_opt( 'tc_menu_submenu_fade_effect') ) ) ? array_merge( $_classes, array( 'tc-submenu-fade' ) ) : $_classes;
@@ -1003,7 +1003,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook : body_class hook
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_add_body_classes($_classes) {
       //menu type class
@@ -1020,7 +1020,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * Callback for tc_header_classes filter
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     function angi_fn_set_header_classes( $_classes ) {
       //backward compatibility (was not handled has an array in previous versions)
@@ -1042,7 +1042,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook :  tc_social_header_block_class hook
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_social_header_class($_classes) {
       return 'span5';
@@ -1055,7 +1055,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook : 'wp_page_menu'
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_add_menuclass( $ulclass) {
       $html =  preg_replace( '/<ul>/' , '<ul class="nav">' , $ulclass, 1);
@@ -1203,7 +1203,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     * hook : tc_user_options_style
     *
     * @package Angilla
-    * @since Angilla 3.2.11
+    * @since Angilla 1.0
     */
     function angi_fn_set_sidenav_style( $_css ) {
       $sidenav_width = apply_filters( 'tc_sidenav_width', 330 );
@@ -1263,7 +1263,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     /**
     * hook : body_class filter
     *
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     function angi_fn_sidenav_body_class( $_classes ){
       $_where = 'right' != esc_attr( angi_fn_opt( 'tc_header_layout') ) ? 'right' : 'left';
@@ -1276,7 +1276,7 @@ if ( ! class_exists( 'ANGI_menu' ) ) :
     /**
      * This hooks is fired in the Walker_Page extensions, by the start_el() methods.
      * It only concerns the main menu, when the sidenav is enabled.
-     * @since Angilla 3.4+
+     * @since Angilla 1.0
      *
      * hook :tc_menu_open_on_click
      */
@@ -1646,7 +1646,7 @@ if ( ! class_exists( 'ANGI_404' ) ) :
        * The template part for displaying error 404 page content
        *
        * @package Angilla
-       * @since Angilla 3.0
+       * @since Angilla 1.0
        */
       function angi_fn_404_content() {
           if ( !is_404() )
@@ -1684,7 +1684,7 @@ if ( ! class_exists( 'ANGI_attachment' ) ) :
          * The template part for displaying attachment content
          * Inspired from Twenty Twelve WP Theme
          * @package Angilla
-         * @since Angilla 3.0
+         * @since Angilla 1.0
          */
         function angi_fn_attachment_content() {
             //check conditional tags
@@ -2888,7 +2888,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
       * Set various comment hooks
       * hook : wp
       * @package Angilla
-      * @since Angilla 3.3.2
+      * @since Angilla 1.0
       */
       function angi_fn_comments_set_hooks() {
         //Maybe fires the comment's template
@@ -2921,7 +2921,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
       * Main commments template
       *
       * @package Angilla
-      * @since Angilla 3.0.10
+      * @since Angilla 1.0
      */
       function angi_fn_comments() {
         if ( ! $this -> angi_fn_are_comments_enabled() )
@@ -2939,7 +2939,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
         *
         *
         * @package Angilla
-        * @since Angilla 3.0
+        * @since Angilla 1.0
        */
         function angi_fn_comment_title() {
           if ( 1 == get_comments_number() ) {
@@ -2962,7 +2962,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
         * Comment list Rendering
         *
         * @package Angilla
-        * @since Angilla 3.0
+        * @since Angilla 1.0
        */
         function angi_fn_comment_list() {
           $_args = apply_filters( 'tc_list_comments_args' , array( 'callback' => array ( $this , 'angi_fn_comment_callback' ) , 'style' => 'ul' ) );
@@ -3085,7 +3085,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * Comments navigation rendering
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
    */
     function angi_fn_comment_navigation () {
       if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through
@@ -3131,7 +3131,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * Comment close rendering
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_comment_close() {
       /* If there are no comments and comments are closed, let's leave a note.
@@ -3160,7 +3160,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * @return  bool
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     function angi_fn_set_comment_list_display() {
       return (bool) esc_attr( angi_fn_opt( 'tc_show_comment_list' ) );
@@ -3172,7 +3172,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * Comment title override (comment_form_defaults filter)
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_comment_title($_defaults) {
       $_defaults['title_reply'] =  __( 'Leave a comment' , 'angilla' );
@@ -3186,7 +3186,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * @return  string
     *
     * @package Angilla
-    * @since Angilla 3.2.6
+    * @since Angilla 1.0
     */
     function angi_fn_display_comment_bubble( $_title = null ) {
       if ( ! $this -> angi_fn_is_bubble_enabled() )
@@ -3211,7 +3211,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * @return string
     *
     * @package Angilla
-    * @since Angilla 3.2.6
+    * @since Angilla 1.0
     */
     function angi_fn_custom_bubble_comment( $_html , $_opt ) {
       return sprintf('%4$s<span class="tc-comment-bubble %1$s">%2$s %3$s</span>',
@@ -3230,7 +3230,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.3.2
+    * @since Angilla 1.0
     */
     function angi_fn_comment_bubble_inline_css( $_css ) {
       if ( 0 == esc_attr( angi_fn_opt( 'tc_comment_show_bubble' ) ) )
@@ -3313,7 +3313,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * @return  boolean
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_are_comments_enabled() {
       global $post;
@@ -3353,7 +3353,7 @@ if ( ! class_exists( 'ANGI_comments' ) ) :
     * @return  boolean
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_is_bubble_enabled() {
       $_bool_arr = array(
@@ -3394,7 +3394,7 @@ if ( ! class_exists( 'ANGI_featured_pages' ) ) :
     * hook : __before_main_container
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_fp_block_display() {
 
@@ -3480,7 +3480,7 @@ if ( ! class_exists( 'ANGI_featured_pages' ) ) :
       * fired in : angi_fn_fp_block_display()
       *
       * @package Angilla
-      * @since Angilla 3.0
+      * @since Angilla 1.0
       * @param area are defined in featured-pages templates,show_img is a customizer option
       * @todo better area definition : dynamic
       */
@@ -3689,7 +3689,7 @@ if ( ! class_exists( 'ANGI_gallery' ) ) :
        * Add a class to the article-container to apply Angilla galleries on hover effects
        *
        * @package Angilla
-       * @since Angilla 3.3.21
+       * @since Angilla 1.0
        *
        */
       function angi_fn_add_gallery_class( $_classes ){
@@ -3704,7 +3704,7 @@ if ( ! class_exists( 'ANGI_gallery' ) ) :
        * Add an optional rel="tc-fancybox[]" attribute to all images embedded in a post gallery
        * Based on the original WP function
        * @package Angilla
-       * @since Angilla 3.0.5
+       * @since Angilla 1.0
        *
        */
       function angi_fn_modify_attachment_link( $markup, $id, $size, $permalink, $icon, $text ) {
@@ -3780,7 +3780,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * hook : template_redirect
       *
       * @package Angilla
-      * @since Angilla 3.2.6
+      * @since Angilla 1.0
       */
       function angi_fn_set_archives_heading_hooks() {
         //is there anything to render in the current context
@@ -3807,7 +3807,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * callback of template_redirect
       *
       * @package Angilla
-      * @since Angilla 3.2.6
+      * @since Angilla 1.0
       */
       function angi_fn_set_post_page_heading_hooks() {
 
@@ -3852,7 +3852,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * hook : __before_content AND __before_loop (for post lists)
       *
       * @package Angilla
-      * @since Angilla 3.1.0
+      * @since Angilla 1.0
       */
       function angi_fn_render_headings_view() {
         $_heading_type = in_the_loop() ? 'content' : 'archive';
@@ -3886,7 +3886,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * callback of tc_headings_{$_heading_type}_html where $_heading_type = content when in the loop
       *
       * @package Angilla
-      * @since Angilla 3.2.9
+      * @since Angilla 1.0
       */
       function angi_fn_post_formats_heading( $_html ) {
         if( in_array( get_post_format(), apply_filters( 'tc_post_formats_with_no_heading', ANGI_init::$instance -> post_formats_with_no_heading ) ) )
@@ -3900,7 +3900,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * @return  string
       *
       * @package Angilla
-      * @since Angilla 3.2.6
+      * @since Angilla 1.0
       */
       function angi_fn_post_page_title_callback() {
         $_title = apply_filters( 'tc_title_text', get_the_title() );
@@ -3916,7 +3916,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * @return  string
       *
       * @package Angilla
-      * @since Angilla 3.2.6
+      * @since Angilla 1.0
       */
       function angi_fn_content_heading_title( $_title ) {
         //Must be in the loop
@@ -3940,7 +3940,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * @return  string
       *
       * @package Angilla
-      * @since Angilla 3.2.6
+      * @since Angilla 1.0
       */
       function angi_fn_add_edit_link_after_title( $_title ) {
         //Must be in the loop
@@ -3962,7 +3962,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * Helper Boolean
       * @return boolean
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       public function angi_fn_is_edit_enabled() {
         //never display when customizing
@@ -3979,7 +3979,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * Returns the edit link html string
       * @return  string
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       function angi_fn_render_edit_link_view( $_echo = true ) {
         $_view = sprintf('<span class="edit-link btn btn-inverse btn-mini"><a class="post-edit-link" href="%1$s" title="%2$s">%2$s</a></span>',
@@ -3997,7 +3997,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * @return  boolean
       *
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_set_post_page_icon( $_bool ) {
           if ( is_page() )
@@ -4017,7 +4017,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * @return string
       *
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_set_archive_icon( $_class ) {
           $_class = ( 0 == esc_attr( angi_fn_opt( 'tc_show_archive_title_icon' ) ) ) ? '' : $_class;
@@ -4034,7 +4034,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * @return  boolean
       *
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_archive_title_and_class_callback( $_title = null, $_return_class = false ) {
         //declares variables to return
@@ -4190,7 +4190,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * callback of template_redirect
       *
       * @package Angilla
-      * @since Angilla 3.2.6
+      * @since Angilla 1.0
       */
       function angi_fn_set_headings_options() {
         //by default don't display the Angilla title in feeds
@@ -4209,7 +4209,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * User option based
       *
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_add_update_notice_in_title($html) {
           //First checks if we are in the loop and we are not displaying a page
@@ -4251,7 +4251,7 @@ if ( ! class_exists( 'ANGI_headings' ) ) :
       * hooks : 'tc_category_archive_title', 'tc_tag_archive_title', 'tc_search_results_title', 'tc_author_archive_title'
       * @param default title string
       * @return string of user defined title
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       function angi_fn_set_archive_custom_title( $_title ) {
         switch ( current_filter() ) {
@@ -4294,7 +4294,7 @@ if ( ! class_exists( 'ANGI_no_results' ) ) :
        * Rendering the no search results
        *
        * @package Angilla
-       * @since Angilla 3.0
+       * @since Angilla 1.0
        */
       function angi_fn_no_result_content() {
           global $wp_query;
@@ -4343,7 +4343,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * hook : wp
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     function angi_fn_set_page_hooks() {
       //add page content and footer to the __loop
@@ -4356,7 +4356,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * hook : wp
     *
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0
     */
     function angi_fn_set_single_page_thumbnail_hooks() {
       //__before_main_wrapper, 200
@@ -4382,7 +4382,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
      * The template part for displaying page content
      *
      * @package Angilla
-     * @since Angilla 3.0
+     * @since Angilla 1.0
      */
     function angi_fn_page_content() {
       if ( ! $this -> angi_fn_page_display_controller() )
@@ -4425,7 +4425,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * hook : esc_attr( angi_fn_opt( 'tc_single_page_thumb_location' ) || '__before_content'
     * @return  void
     * @package Angilla
-    * @since Angilla 3.2.3
+    * @since Angilla 1.0
     */
     function angi_fn_single_page_prepare_thumb() {
       //never display the featured image if a slider is displayed
@@ -4447,7 +4447,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     /**
     * @return html string
     * @package Angilla
-    * @since Angilla 3.2.3
+    * @since Angilla 1.0
     */
     private function angi_fn_render_single_page_thumb_view( $_thumb_model , $_thumb_class ) {
       echo apply_filters( 'tc_render_single_page_thumb_view',
@@ -4468,7 +4468,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * Page view controller
     * @return  boolean
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     function angi_fn_page_display_controller() {
       $tc_show_page_content = 'page' == angi_fn__f('__post_type')
@@ -4482,7 +4482,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * HELPER
     * @return boolean
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0
     */
     function angi_fn_show_single_page_thumbnail() {
       return ! angi_fn_is_real_home() && $this -> angi_fn_page_display_controller() && apply_filters( 'tc_show_single_page_thumbnail', 'hide' != esc_attr( angi_fn_opt( 'tc_single_page_thumb_location' ) ) );
@@ -4493,7 +4493,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * HELPER
     * @return size string
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0
     */
     private function angi_fn_get_current_thumb_size() {
       $_exploded_location   = explode( '|', esc_attr( angi_fn_opt( 'tc_single_page_thumb_location' ) ) );
@@ -4506,7 +4506,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * hook : tc_page_thumb_wrapper
     * @return html string
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0
     */
     function angi_fn_set_thumb_shape( $thumb_wrapper, $thumb_img ) {
       return sprintf('<div class="%4$s"><a class="tc-rectangular-thumb" href="%1$s" title="%2$s">%3$s</a></div>',
@@ -4523,7 +4523,7 @@ if ( ! class_exists( 'ANGI_page' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0
     */
     function angi_fn_write_thumbnail_inline_css( $_css ) {
       if ( ! $this -> angi_fn_show_single_page_thumbnail() )
@@ -4597,7 +4597,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * hook : wp
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_single_post_hooks() {
       //add post header, content and footer to the __loop
@@ -4612,7 +4612,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * hook : wp
     *
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_single_post_thumbnail_hooks() {
       //__before_main_wrapper, 200
@@ -4640,7 +4640,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
      * The default template for displaying single post content
      *
      * @package Angilla
-     * @since Angilla 3.0
+     * @since Angilla 1.0
      */
     function angi_fn_post_content() {
       //check conditional tags : we want to show single post or single custom post types
@@ -4670,7 +4670,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * Single post footer view
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_post_footer() {
       //check conditional tags : we want to show single post or single custom post types
@@ -4731,7 +4731,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * hook : esc_attr( angi_fn_opt( 'tc_single_post_thumb_location' ) || '__before_content'
     * @return  void
     * @package Angilla
-    * @since Angilla 3.2.3
+    * @since Angilla 1.0
     */
     function angi_fn_single_post_prepare_thumb() {
       //never display the featured image if a slider is displayed
@@ -4753,7 +4753,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     /**
     * @return html string
     * @package Angilla
-    * @since Angilla 3.2.3
+    * @since Angilla 1.0
     */
     private function angi_fn_render_single_post_thumb_view( $_thumb_model , $_thumb_class ) {
       echo apply_filters( 'tc_render_single_post_thumb_view',
@@ -4774,7 +4774,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * Single post view controller
     * @return  boolean
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_single_post_display_controller() {
       //check conditional tags : we want to show single post or single custom post types
@@ -4792,7 +4792,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * HELPER
     * @return boolean
     * @package Angilla
-    * @since Angilla 3.2.11
+    * @since Angilla 1.0
     */
     function angi_fn_show_single_post_thumbnail() {
       return $this -> angi_fn_single_post_display_controller() && apply_filters( 'tc_show_single_post_thumbnail', 'hide' != esc_attr( angi_fn_opt( 'tc_single_post_thumb_location' ) ) );
@@ -4803,7 +4803,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * HELPER
     * @return size string
     * @package Angilla
-    * @since Angilla 3.2.3
+    * @since Angilla 1.0
     */
     private function angi_fn_get_current_thumb_size() {
       $_exploded_location   = explode( '|', esc_attr( angi_fn_opt( 'tc_single_post_thumb_location' ) ) );
@@ -4816,7 +4816,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * hook : tc_post_thumb_wrapper
     * @return html string
     * @package Angilla
-    * @since Angilla 3.2.0
+    * @since Angilla 1.0
     */
     function angi_fn_set_thumb_shape( $thumb_wrapper, $thumb_img ) {
       return sprintf('<div class="%4$s"><a class="tc-rectangular-thumb" href="%1$s" title="%2$s">%3$s</a></div>',
@@ -4833,7 +4833,7 @@ if ( ! class_exists( 'ANGI_post' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.2.6
+    * @since Angilla 1.0
     */
     function angi_fn_write_thumbnail_inline_css( $_css ) {
       if ( ! $this -> angi_fn_show_single_post_thumbnail() )
@@ -4909,7 +4909,7 @@ class ANGI_post_list {
   * @return void
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   function angi_fn_set_thumb_early_options() {
     //Set thumb size depending on the customizer thumbnail position options (since 3.2.0)
@@ -4923,7 +4923,7 @@ class ANGI_post_list {
   * hook : wp_head
   *
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_set_post_list_hooks() {
     if ( ! $this -> angi_fn_post_list_controller() )
@@ -4961,7 +4961,7 @@ class ANGI_post_list {
   * hook : __loop
   * inside loop
   * @package Angilla
-  * @since Angilla 3.0.10
+  * @since Angilla 1.0
   */
   function angi_fn_prepare_section_view() {
     global $post;
@@ -4982,7 +4982,7 @@ class ANGI_post_list {
   * inside loop
   * @return array() "_layout" , "_show_thumb" , "_css_class"
   * @package Angilla
-  * @since Angilla 3.3.2
+  * @since Angilla 1.0
   */
   private function angi_fn_get_content_model($_layout) {
     $_content      = '';
@@ -5007,7 +5007,7 @@ class ANGI_post_list {
   /**
   * @return boolean whether excerpt instead of full content
   * @package Angilla
-  * @since Angilla 3.3.2
+  * @since Angilla 1.0
   */
   private function angi_fn_show_excerpt() {
     //When do we show the post excerpt?
@@ -5020,7 +5020,7 @@ class ANGI_post_list {
   /**
   * @return boolean
   * @package Angilla
-  * @since Angilla 3.3.2
+  * @since Angilla 1.0
   */
   private function angi_fn_show_thumb() {
     //when do we display the thumbnail ?
@@ -5046,7 +5046,7 @@ class ANGI_post_list {
   * Render each post list section view
   *
   * @package Angilla
-  * @since Angilla 3.0.10
+  * @since Angilla 1.0
   */
   private function angi_fn_render_section_view( $_layout, $_content_model, $_thumb_model ) {
     global $wp_query;
@@ -5082,7 +5082,7 @@ class ANGI_post_list {
   * Displays the posts list content
   *
   * @package Angilla
-  * @since Angilla 3.0
+  * @since Angilla 1.0
   */
   private function angi_fn_render_content_view( $_content_model ) {
     //extract "_layout_class" , "_icon_class" , "_content"
@@ -5137,7 +5137,7 @@ class ANGI_post_list {
   * ! 2 cases here : posts lists and single posts
   *
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_set_thumb_shape( $thumb_wrapper, $thumb_img ) {
     $_shape = esc_attr( angi_fn_opt( 'tc_post_list_thumb_shape') );
@@ -5161,7 +5161,7 @@ class ANGI_post_list {
   * @return  array of classes
   *
   * @package Angilla
-  * @since Angilla 3.3.2
+  * @since Angilla 1.0
   */
   function angi_fn_add_post_list_context( $_classes ) {
     return array_merge( $_classes , array( 'tc-post-list-context' ) );
@@ -5173,7 +5173,7 @@ class ANGI_post_list {
   * Controller of the posts list view
   *
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   public function angi_fn_post_list_controller() {
     global $wp_query;
@@ -5200,7 +5200,7 @@ class ANGI_post_list {
   * Callback of filter post_class
   * @return  array() of classes
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_add_thumb_shape_name( $_classes ) {
     return array_merge( $_classes , array(esc_attr( angi_fn_opt( 'tc_post_list_thumb_shape') ) ) );
@@ -5211,7 +5211,7 @@ class ANGI_post_list {
   * hook : excerpt_length hook
   * @return string
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_set_excerpt_length( $length ) {
     $_custom = esc_attr( angi_fn_opt( 'tc_post_list_excerpt_length' ) );
@@ -5223,7 +5223,7 @@ class ANGI_post_list {
   * hook : tc_post_list_layout
   * @return array() of layout data
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_set_post_list_layout( $_layout ) {
     $_position                  = esc_attr( angi_fn_opt( 'tc_post_list_thumb_position' ) );
@@ -5241,7 +5241,7 @@ class ANGI_post_list {
   * hook : WP filter post_class
   * @return array() of classes
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_set_content_class( $_classes ) {
     $_position                  = esc_attr( angi_fn_opt( 'tc_post_list_thumb_position' ) );
@@ -5256,7 +5256,7 @@ class ANGI_post_list {
   * @return  string
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   function angi_fn_change_thumbnail_inline_css_width( $_style,  $image, $_filtered_thumb_size) {
     //conditions :
@@ -5289,7 +5289,7 @@ class ANGI_post_list {
   * @return css string
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   function angi_fn_write_thumbnail_inline_css( $_css ) {
     if ( ! $this -> angi_fn_post_list_controller() )
@@ -5311,7 +5311,7 @@ class ANGI_post_list {
   * hook : tc_thumb_size_name (declared in ANGI_post_thumbnails)
   *
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   */
   function angi_fn_set_thumb_size( $_default_size ) {
     $_shape = esc_attr( angi_fn_opt( 'tc_post_list_thumb_shape') );
@@ -5331,7 +5331,7 @@ class ANGI_post_list {
   * @return  string
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   */
   function angi_fn_add_support_for_shortcode_special_chars( $_content ) {
     return str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $_content ) );
@@ -5832,7 +5832,7 @@ if ( ! class_exists( 'ANGI_post_list_grid' ) ) :
         /**
         * @return  bool
         * hook : tc_edit_in_title
-        * @since Angilla 3.4.18
+        * @since Angilla 1.0
         */
         function angi_fn_grid_disable_edit_in_title_expanded( $_bool ){
           return $this -> angi_fn_force_current_post_expansion() ? false : $_bool;
@@ -5842,7 +5842,7 @@ if ( ! class_exists( 'ANGI_post_list_grid' ) ) :
         /**
         * Append the edit link to the expanded post figcaption
         * hook : tc_grid_get_single_post_html
-        * @since Angilla 3.4.18
+        * @since Angilla 1.0
         */
         function angi_fn_grid_render_expanded_edit_link( $_html ) {
           if ( $this -> angi_fn_force_current_post_expansion() )
@@ -5854,7 +5854,7 @@ if ( ! class_exists( 'ANGI_post_list_grid' ) ) :
         /**
         * @return css string
         * hook : tc_user_options_style
-        * @since Angilla 3.2.18
+        * @since Angilla 1.0
         */
         function angi_fn_grid_write_inline_css( $_css ){
           if ( ! $this -> angi_fn_is_grid_enabled() )
@@ -6360,7 +6360,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * hook : template_redirect
         *
         * @package Angilla
-        * @since Angilla 3.2.0
+        * @since Angilla 1.0
         */
         function angi_fn_set_visibility_options() {
           //if customizing context, always render. Will be hidden in the DOM with a body class filter is disabled.
@@ -6421,7 +6421,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * tc_show_post_metas gets filtered by angi_fn_set_visibility_options() called early in template_redirect
         * @return  boolean
         * @package Angilla
-        * @since Angilla 3.2.6
+        * @since Angilla 1.0
         */
         private function angi_fn_show_post_metas() {
           global $post;
@@ -6465,7 +6465,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * hook : __after_content_title
         * @return void
         * @package Angilla
-        * @since Angilla 3.2.2
+        * @since Angilla 1.0
         */
         function angi_fn_set_post_metas_hooks() {
           if ( ! $this -> angi_fn_show_post_metas() )
@@ -6494,7 +6494,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * Post metas model
         * @return model array
         * @package Angilla
-        * @since Angilla 3.2.6
+        * @since Angilla 1.0
         */
         private function angi_fn_build_post_post_metas_model() {
           $cat_list   = $this -> angi_fn_meta_generate_tax_list( true );
@@ -6523,7 +6523,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * Attachment metas model
         * @return model array
         * @package Angilla
-        * @since Angilla 3.3.2
+        * @since Angilla 1.0
         */
         private function angi_fn_build_attachment_post_metas_model() {
           global $post;
@@ -6547,7 +6547,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * Angilla metas view
         * @return  html string
         * @package Angilla
-        * @since Angilla 3.3.2
+        * @since Angilla 1.0
         */
         private function angi_fn_render_metas_view( $_model ) {
           if ( empty($_model) )
@@ -6576,7 +6576,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * hook : tc_meta_utility_text
         * @return  html string as a wp filter
         * @package Angilla
-        * @since Angilla 3.2.6
+        * @since Angilla 1.0
         */
         function angi_fn_set_post_metas_elements( $_default , $_args = array() ) {
             $_show_cats         = 0 != esc_attr( angi_fn_opt( 'tc_show_post_metas_categories' ) ) && false != $this -> angi_fn_meta_generate_tax_list( true );
@@ -6666,7 +6666,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * @param  hierarchical tax boolean => true = categories like, false = tags like
         *
         * @package Angilla
-        * @since Angilla 3.0
+        * @since Angilla 1.0
         */
         public function angi_fn_meta_generate_tax_list( $hierarchical ) {
           $post_terms = $this -> angi_fn_get_term_of_tax_type( $hierarchical );
@@ -6684,7 +6684,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * @param  $term object
         *
         * @package Angilla
-        * @since Angilla 3.3.2
+        * @since Angilla 1.0
         */
         private function angi_fn_meta_term_view( $term ) {
           $_classes         =  array( 'btn' , 'btn-mini' );
@@ -6719,7 +6719,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * @return boolean (false) or array
         * @param  boolean : hierarchical or not
         * @package Angilla
-        * @since Angilla 3.1.20
+        * @since Angilla 1.0
         *
         */
         public function angi_fn_get_term_of_tax_type( $hierarchical = true ) {
@@ -6787,7 +6787,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * @return boolean (false)
         * @param  $post_type, $_tax_object
         * @package Angilla
-        * @since Angilla 3.3+
+        * @since Angilla 1.0
         *
         */
         public function angi_fn_is_tax_authorized( $_tax_object , $post_type ) {
@@ -6806,7 +6806,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * Return the date post metas
         *
         * @package Angilla
-        * @since Angilla 3.2.6
+        * @since Angilla 1.0
         */
         public function angi_fn_get_meta_date( $pub_or_update = 'publication', $_format = '' ) {
             if ( 'short' == $_format )
@@ -6833,7 +6833,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * Return the post author metas
         *
         * @package Angilla
-        * @since Angilla 3.2.6
+        * @since Angilla 1.0
         */
         private function angi_fn_get_meta_author() {
 
@@ -6876,7 +6876,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * Return the filter post metas for specific post formats
         * hook tc_meta_utility_text
         * @package Angilla
-        * @since Angilla 3.2.9
+        * @since Angilla 1.0
         */
         function angi_fn_add_link_to_post_after_metas( $_metas_html ) {
 
@@ -6897,7 +6897,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * hook body_class filter
         *
         * @package Angilla
-        * @since Angilla 3.2.0
+        * @since Angilla 1.0
         */
         function angi_fn_hide_all_post_metas( $_classes ) {
           return array_merge($_classes , array('hide-all-post-metas') );
@@ -6908,7 +6908,7 @@ if ( ! class_exists( 'ANGI_post_metas' ) ) :
         * hook body_class filter
         *
         * @package Angilla
-        * @since Angilla 3.2.0
+        * @since Angilla 1.0
         */
         function angi_fn_hide_post_metas( $_classes ) {
           return array_merge($_classes , array('hide-post-metas') );
@@ -7004,7 +7004,7 @@ if ( ! class_exists( 'ANGI_post_navigation' ) ) :
       *
       * returns an array which contains, @bool whether or not show the navigation , @array css classes of the navigation, @string the context
       * @package Angilla
-      * @since Angilla 3.3.22
+      * @since Angilla 1.0
       */
       function angi_fn_set_visibility_options(){
 
@@ -7035,7 +7035,7 @@ if ( ! class_exists( 'ANGI_post_navigation' ) ) :
        * The template part for displaying nav links
        *
        * @package Angilla
-       * @since Angilla 3.0
+       * @since Angilla 1.0
        */
       function angi_fn_post_nav() {
 
@@ -7447,7 +7447,7 @@ class ANGI_post_thumbnails {
     * Display or return the thumbnail view
     * @param : thumbnail model (img, width, height), layout value, echo bool
     * @package Angilla
-    * @since Angilla 3.0.10
+    * @since Angilla 1.0
     */
     function angi_fn_render_thumb_view( $_thumb_model , $layout = 'span3', $_echo = true ) {
       if ( empty( $_thumb_model ) )
@@ -7496,7 +7496,7 @@ class ANGI_post_thumbnails {
     * @return  array of image attributes
     *
     * @package Angilla
-    * @since Angilla 3.4.16
+    * @since Angilla 1.0
     */
     function angi_fn_remove_srcset_attr( $attr ) {
       if ( isset( $attr[ 'srcset' ] ) ) {
@@ -7519,7 +7519,7 @@ class ANGI_post_thumbnails {
     * @return  string
     *
     * @package Angilla
-    * @since Angilla 3.2.6
+    * @since Angilla 1.0
     */
     function angi_fn_change_thumb_inline_css( $_style, $image, $_filtered_thumb_size) {
       //conditions :
@@ -7579,7 +7579,7 @@ if ( ! class_exists( 'ANGI_sidebar' ) ) :
       * Set sidebar hooks
       * hook : wp
       *
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       function angi_fn_set_sidebar_hooks() {
         //displays left sidebar
@@ -7703,7 +7703,7 @@ if ( ! class_exists( 'ANGI_sidebar' ) ) :
       * @uses filter tc_footer_widget_wrapper_class
       *
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_set_sidebar_wrapper_widget_class($_original_classes) {
         $_no_icons_classes = array_merge($_original_classes, array('no-widget-icons'));
@@ -7787,7 +7787,7 @@ class ANGI_slider {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.0.15
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_get_single_slide_model( $slider_name_id, $_loop_index , $id , $img_size ) {
@@ -7886,7 +7886,7 @@ class ANGI_slider {
   * the base for the actual post slide model
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_single_post_slide_pre_model( $_post , $img_size, $args ){
@@ -7929,7 +7929,7 @@ class ANGI_slider {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_single_post_slide_model( $slider_name_id, $_loop_index , $_post_slide , $common, $img_size ){
@@ -7989,7 +7989,7 @@ class ANGI_slider {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.0.15
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_get_the_slides( $slider_name_id, $img_size ) {
@@ -8044,7 +8044,7 @@ class ANGI_slider {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   /* Steps;
@@ -8106,7 +8106,7 @@ class ANGI_slider {
   * - eventually store the transient
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_get_pre_posts_slides( $args ){
@@ -8203,7 +8203,7 @@ class ANGI_slider {
   * @return  array($slider_name_id, $slides, $layout_class)
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_get_slider_model() {
@@ -8247,7 +8247,7 @@ class ANGI_slider {
   * Returns the array of eligible posts for the slider of posts
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_query_posts_slider( $args = array() ) {
@@ -8350,7 +8350,7 @@ class ANGI_slider {
   * @param $_view_model = array( $id, $data , $slider_name_id, $img_size )
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   function angi_fn_render_single_slide_view( $_view_model ) {
@@ -8376,7 +8376,7 @@ class ANGI_slider {
   * @param (string) $slider_name_id
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   function angi_fn_render_slider_loader_view( $slider_name_id ) {
@@ -8405,7 +8405,7 @@ class ANGI_slider {
   * @param $_view_model = array( $id, $data , $slider_name_id, $img_size )
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   function angi_fn_render_slide_background_view( $_view_model ) {
@@ -8432,7 +8432,7 @@ class ANGI_slider {
   * hook: tc_slide_background
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   function angi_fn_link_whole_slide( $slide_background, $link_url, $id, $slider_name_id, $data ) {
@@ -8451,7 +8451,7 @@ class ANGI_slider {
   * @param $_view_model = array( $id, $data , $slider_name_id, $img_size )
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   function angi_fn_render_slide_caption_view( $_view_model ) {
@@ -8508,7 +8508,7 @@ class ANGI_slider {
   * @param $_view_model = array( $id, $data , $slider_name_id, $img_size )
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   function angi_fn_render_slide_edit_link_view( $_view_model ) {
@@ -8658,7 +8658,7 @@ class ANGI_slider {
   * @return  boolean
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_is_slider_possible() {
@@ -8676,7 +8676,7 @@ class ANGI_slider {
   * @return  boolean
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   */
   function angi_fn_slider_exists( $slider ){
     //if the slider not longer exists or exists but is empty, return false
@@ -8751,7 +8751,7 @@ class ANGI_slider {
   * @return number height value
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   */
   function angi_fn_set_demo_slider_height( $_h ) {
     //this custom demo height is applied when :
@@ -8777,7 +8777,7 @@ class ANGI_slider {
   * @return css string
   *
   * @package Angilla
-  * @since Angilla 3.2.6
+  * @since Angilla 1.0
   */
   function angi_fn_write_slider_inline_css( $_css ) {
     //custom css for the slider loader
@@ -8880,7 +8880,7 @@ class ANGI_slider {
   * hook : tc_slider_layout_class filter
   *
   * @package Angilla
-  * @since Angilla 3.2.0
+  * @since Angilla 1.0
   *
   */
   function angi_fn_set_slider_wrapper_class($_classes) {
@@ -8896,7 +8896,7 @@ class ANGI_slider {
   * @return  array of css classes
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   */
   function angi_fn_set_inner_class( $_classes ) {
     if( ! (bool) esc_attr( angi_fn_opt( 'tc_center_slider_img') ) || ! is_array($_classes) )
@@ -8914,7 +8914,7 @@ class ANGI_slider {
   * @return string
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_post_slide_title( $_post, $ID ) {
@@ -8931,7 +8931,7 @@ class ANGI_slider {
   * @return string
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_post_slide_excerpt( $_post, $ID ) {
@@ -8947,7 +8947,7 @@ class ANGI_slider {
   * @return string
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_post_slide_button_text( $button_text ) {
@@ -8967,7 +8967,7 @@ class ANGI_slider {
   * and custom trimming.
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   // move this into ANGI_utils?
@@ -8993,7 +8993,7 @@ class ANGI_slider {
   * and custom trimming.
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   // move this into ANGI_utils?
@@ -9049,7 +9049,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
     * @return void
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     function angi_fn_footer_hook_setup() {
       //add sticky_footer body class
@@ -9090,7 +9090,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		*
 		*
 		* @package Angilla
-		* @since Angilla 3.0.10
+		* @since Angilla 1.0
 		*/
 	  function angi_fn_widgets_footer() {
     	//checks if there's at least one active widget area in footer.php.php
@@ -9143,7 +9143,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		 *
 		 *
 		 * @package Angilla
-		 * @since Angilla 3.0.10
+		 * @since Angilla 1.0
 		 */
 	    function angi_fn_colophon_display() {
 
@@ -9174,7 +9174,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		 *
 		 *
 		 * @package Angilla
-		 * @since Angilla 3.0.10
+		 * @since Angilla 1.0
 		 */
 	    function angi_fn_colophon_left_block() {
         //when do we display the socials?
@@ -9201,7 +9201,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		 *
 		 *
 		 * @package Angilla
-		 * @since Angilla 3.0.6
+		 * @since Angilla 1.0
 		 */
 	    function angi_fn_colophon_center_block() {
 	    	echo apply_filters(
@@ -9218,7 +9218,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
                               ),
                               apply_filters( 'tc_credit_link',
                                   sprintf( '<span class="tc-credits-text">%1$s </span> &middot;',
-                                      sprintf( __('Designed with the %s', 'angilla'), sprintf( '<a class="angi-designer-link" href="%1$s" title="%2$s">%2$s</a>', esc_url( ANGI_WEBSITE . 'angilla' ), __('Angilla', 'angilla') ) )
+                                      sprintf( __('Designed with the %s', 'angilla'), sprintf( '<a class="angi-designer-link" href="%1$s" title="%2$s">%2$s</a>', esc_url( ANGI_WEBSITE ), __('Angilla', 'angilla') ) )
                                   )
                               )
   					   )
@@ -9232,7 +9232,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		*
 		*
 		* @package Angilla
-		* @since Angilla 3.0.10
+		* @since Angilla 1.0
 		*/
         function angi_fn_colophon_right_block() {
           //since 3.4.16 BTT button excludes BTT text
@@ -9259,7 +9259,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
     * @return void
     * @param  priority number, location string
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     function angi_fn_set_rtl_colophon_priority( $_priority, $_location ) {
       if ( ! is_rtl() )
@@ -9274,7 +9274,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.3.27
+    * @since Angilla 1.0
     */
     function angi_fn_write_sticky_footer_inline_css( $_css ){
       if ( ! ( $this -> is_sticky_footer_enabled() || angi_fn_is_customizing() ) )
@@ -9292,7 +9292,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
     * Callback of body_class hook
     *
     * @package Angilla
-    * @since Angilla 3.3.27
+    * @since Angilla 1.0
     */
     function angi_fn_add_sticky_footer_body_class($_classes) {
       if ( $this -> is_sticky_footer_enabled() )
@@ -9307,7 +9307,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
     *
     *
     * @package Angilla
-    * @since Angilla 3.3.27
+    * @since Angilla 1.0
     *
     * @hook __after_main_container
     *
@@ -9325,7 +9325,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		* Has to be enabled in the customizer
 		*
 		* @package Angilla
-		* @since Angilla 3.2.0
+		* @since Angilla 1.0
 		*/
 		function angi_fn_render_back_to_top() {
 			if ( 0 == esc_attr( angi_fn_opt( 'tc_show_back_to_top' ) ) )
@@ -9341,7 +9341,7 @@ if ( ! class_exists( 'ANGI_footer_main' ) ) :
 		* @uses filter tc_footer_widget_wrapper_class
 		*
 		* @package Angilla
-		* @since Angilla 3.2.0
+		* @since Angilla 1.0
 		*/
 		function angi_fn_set_widget_wrapper_class( $_original_classes ) {
 			$_no_icons_classes = array_merge($_original_classes, array('no-widget-icons'));

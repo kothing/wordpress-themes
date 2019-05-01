@@ -31,7 +31,7 @@ if ( ! class_exists( 'ANGI_resources_fonts' ) ) :
         * Write the font icon in the custom stylesheet at the very beginning
         * hook : wp_enqueue_scripts
         * @package Angilla
-        * @since Angilla 3.2.3
+        * @since Angilla 1.0.0
         */
         function angi_fn_maybe_enqueue_fa_icons() {
               if ( angi_fn_is_full_nimble_tmpl() )
@@ -54,7 +54,7 @@ if ( ! class_exists( 'ANGI_resources_fonts' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.2.9
+    * @since Angilla 1.0.0
     */
     function angi_fn_enqueue_gfonts() {
       $_font_pair         = esc_attr( angi_fn_opt( 'tc_fonts' ) );
@@ -87,7 +87,7 @@ if ( ! class_exists( 'ANGI_resources_fonts' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.2.9
+    * @since Angilla 1.0.0
     */
 
     function angi_fn_write_fonts_inline_css( $_css = null , $_context = null ) {
@@ -193,7 +193,7 @@ if ( ! class_exists( 'ANGI_resources_fonts' ) ) :
     * @return bool
     *
     * @package Angilla
-    * @since Angilla 3.3.2
+    * @since Angilla 1.0.0
     */
     private function angi_fn_is_gfont($_font , $_gfont_id = null ) {
       $_gfont_id = $_gfont_id ? $_gfont_id : '_g_';
@@ -206,7 +206,7 @@ if ( ! class_exists( 'ANGI_resources_fonts' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.2.11
+    * @since Angilla 1.0.0
     */
     function angi_fn_write_dropcap_inline_css( $_css = null , $_context = null ) {
       $_css               = isset($_css) ? $_css : '';
@@ -249,7 +249,7 @@ if ( ! class_exists( 'ANGI_resources_fonts' ) ) :
     * @return array( font-family, weight )
     *
     * @package Angilla
-    * @since Angilla 3.3.2
+    * @since Angilla 1.0.0
     */
     private function angi_fn_get_font_css_prop( $_raw_font , $is_gfont = false ) {
       $_css_exp = explode(':', $_raw_font);

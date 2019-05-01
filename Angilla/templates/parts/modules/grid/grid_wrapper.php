@@ -5,7 +5,7 @@
  * In WP loop
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 
 /* Are we at the start of the loop? in this case print a section wrapper element */

@@ -264,7 +264,6 @@ if ( ! class_exists( 'ANGI_controller_content' ) ) :
     * @return  boolean
     *
     * @package Angilla
-    * @since Angilla 3.3+
     */
     public function angi_fn_are_comments_enabled() {
 

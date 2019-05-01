@@ -2,7 +2,6 @@
  * Ajax scripts for slider
  *
  * @package Angilla
- * @since Angilla 1.0
  */
 var AngiSlider;
 ( function($) {

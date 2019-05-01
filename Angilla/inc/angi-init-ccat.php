@@ -384,7 +384,7 @@ if ( ! class_exists( 'ANGI_init' ) ) :
       * Returns the active path+skin.css or tc_common.css
       *
       * @package Angilla
-      * @since Angilla 3.0.15
+      * @since Angilla 1.0.0
       */
       function angi_fn_get_style_src( $_wot = 'skin' ) {
           $_sheet    = ( 'skin' == $_wot ) ? esc_attr( angi_fn_opt( 'tc_skin' ) ) : 'tc_common.css';
@@ -418,7 +418,7 @@ if ( ! class_exists( 'ANGI_init' ) ) :
       * hook body_class
       *
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_set_body_classes( $_classes ) {
           if ( 0 != esc_attr( angi_fn_opt( 'tc_link_hover_effect' ) ) )
@@ -483,7 +483,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * hook : after_setup_theme
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     function angi_fn_set_plugins_supported() {
       //add support for plugins (added in v3.1+)
@@ -515,7 +515,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * This function handles the following plugins compatibility : Jetpack (for the carousel addon and photon), Bbpress, Qtranslate, Woocommerce
     *
     * @package Angilla
-    * @since Angilla 3.0.15
+    * @since Angilla 1.0.0
     */
     function angi_fn_plugins_compatibility() {
       /* Unlimited Featured Pages  */
@@ -608,7 +608,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Jetpack compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_jetpack_compat() {
       //Photon jetpack's module conflicts with our smartload feature:
@@ -634,7 +634,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * BBPress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_bbpress_compat() {
       if ( ! function_exists( 'angi_fn_bbpress_disable_feature' ) ) {
@@ -667,7 +667,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * BuddyPress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_buddypress_compat() {
       add_filter( 'tc_are_comments_enabled', 'angi_fn_buddypress_disable_comments' );
@@ -698,7 +698,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * QtranslateX compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_qtranslatex_compat() {
       function angi_fn_url_lang($url) {
@@ -785,7 +785,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Polylang compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_polylang_compat() {
 
@@ -877,7 +877,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * WPML compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_wpml_compat() {
       //credits : @Srdjan
@@ -1122,7 +1122,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * The Events Calendar compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_the_events_calendar_compat() {
       /*
@@ -1252,7 +1252,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * OptimizePress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_optimizepress_compat() {
       add_action('wp_print_scripts', 'angi_fn_op_dequeue_fancybox_js');
@@ -1285,7 +1285,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Sensei compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_sensei_compat() {
       //unkooks the default sensei wrappers and add angilla's content wrapper and action hooks
@@ -1336,7 +1336,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Woocommerce compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_woocomerce_compat() {
       //unkooks the default woocommerce wrappersv and add angilla's content wrapper and action hooks
@@ -1640,7 +1640,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Visual Composer compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_vc_compat() {
       //link smooth scroll: exclude all anchor links inside vc wrappers (.vc_row)
@@ -1668,7 +1668,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Disqus Comment System compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_disqus_compat() {
       if ( ! function_exists( 'angi_fn_disqus_comments_enabled' ) ) {
@@ -1705,7 +1705,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * Ultimate Responsive Image Slider compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0
     */
     private function angi_fn_set_uris_compat() {
       add_filter ( 'tc_img_smart_load_options', 'angi_fn_uris_disable_img_smartload' ) ;
@@ -1730,7 +1730,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * LearnPress compat hooks
     *
     * @package Angilla
-    * @since Angilla 3.5+
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_lp_compat() {
       //do nothing if is admin
@@ -1827,12 +1827,11 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     /* same in angi modern */
     /**
     * TC Unlimited Featured Pages compat hooks
-    * Since Angilla 3.4.24 we changed the functions and class prefixes
     * Olf fpu versions might refer to them throwing PHP errors
     * with the code below we basically "soft-disable" the plugin
     * without actyally disabling it to allow the user to update it
     * @package Angilla
-    * @since Angilla 3.4.24
+    * @since Angilla 1.0.0
     */
     private function angi_fn_set_tc_unlimited_featured_pages_compat() {
       //This has to be fired after : tc_generates_featured_pages | 10 (priority)
@@ -1971,7 +1970,7 @@ class ANGI_utils_settings_map {
       * Also used to get the default options array, in this case $get_default = true and we DISABLE the __get_option (=>infinite loop)
       *
       * @package Angilla
-      * @since Angilla 3.0
+      * @since Angilla 1.0
       * TODO: unify this
       */
       public function angi_fn_get_customizer_map( $get_default = null,  $what = null ) {
@@ -2048,7 +2047,7 @@ class ANGI_utils_settings_map {
       * @return array()
       *
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       function angi_fn_popul_setting_control_map( $_map, $get_default = null ) {
 
@@ -3310,7 +3309,7 @@ class ANGI_utils_settings_map {
       * Returns the list of available skins from child (if exists) and parent theme
       *
       * @package Angilla
-      * @since Angilla 3.0.11
+      * @since Angilla 1.0.0
       * @updated Angilla 3.0.15
       */
       //Valid only for angilla < 4.0
@@ -3330,7 +3329,7 @@ class ANGI_utils_settings_map {
       * Generates skin select list
       *
       * @package Angilla
-      * @since Angilla 3.0.15
+      * @since Angilla 1.0.0
       *
       */
       function angi_fn_get_skins($path) {
@@ -3608,7 +3607,7 @@ if ( ! class_exists( 'ANGI_utils' ) ) :
       /**
       * hook : wp_head
       * @package Angilla
-      * @since Angilla 3.3.0
+      * @since Angilla 1.0
       */
       function angi_fn_wp_filters() {
         add_filter( 'the_content'                         , array( $this , 'angi_fn_fancybox_content_filter' ) );
@@ -3635,7 +3634,7 @@ if ( ! class_exists( 'ANGI_utils' ) ) :
       * Returns the current skin's primary color
       *
       * @package Angilla
-      * @since Angilla 3.1.23
+      * @since Angilla 1.0.0
       */
       function angi_fn_get_skin_color( $_what = null ) {
           $_color_map    = ANGI___::$instance -> skin_classic_color_map;
@@ -3786,7 +3785,7 @@ if ( ! class_exists( 'ANGI_utils' ) ) :
        * Add an optional rel="tc-fancybox[]" attribute to all images embedded in a post.
        *
        * @package Angilla
-       * @since Angilla 2.0.7
+       * @since Angilla 1.0.0
        */
       function angi_fn_fancybox_content_filter( $content) {
           $tc_fancybox = esc_attr( angi_fn_opt( 'tc_fancybox' ) );
@@ -3971,7 +3970,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * Fired from the constructor
       *
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       private function angi_fn_get_script_map( $_handles = array() ) {
           $_front_path  =  'inc/assets/js/';
@@ -4282,7 +4281,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * Writes the sanitized custom CSS from options array into the custom user stylesheet, at the very end (priority 9999)
       * hook : tc_user_options_style
       * @package Angilla
-      * @since Angilla 2.0.7
+      * @since Angilla 1.0.0
       */
       function angi_fn_write_custom_css( $_css = null ) {
         $_css               = isset($_css) ? $_css : '';
@@ -4334,7 +4333,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * @return css string
       *
       * @package Angilla
-      * @since Angilla 3.2.9
+      * @since Angilla 1.0
       */
       function angi_fn_enqueue_gfonts() {
         $_font_pair         = esc_attr( angi_fn_opt( 'tc_fonts' ) );
@@ -4359,7 +4358,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * @return css string
       *
       * @package Angilla
-      * @since Angilla 3.2.9
+      * @since Angilla 1.0
       */
       function angi_fn_write_fonts_inline_css( $_css = null , $_context = null ) {
         $_css               = isset($_css) ? $_css : '';
@@ -4428,7 +4427,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * @return bool
       *
       * @package Angilla
-      * @since Angilla 3.3.2
+      * @since Angilla 1.0
       */
       private function angi_fn_is_gfont($_font , $_gfont_id = null ) {
         $_gfont_id = $_gfont_id ? $_gfont_id : '_g_';
@@ -4441,7 +4440,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * @return css string
       *
       * @package Angilla
-      * @since Angilla 3.2.11
+      * @since Angilla 1.0
       */
       function angi_fn_write_dropcap_inline_css( $_css = null , $_context = null ) {
         $_css               = isset($_css) ? $_css : '';
@@ -4478,7 +4477,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * hook tc_opt_tc_skin
       *
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       function angi_fn_set_random_skin ( $_skin ) {
         if ( false == esc_attr( angi_fn_opt( 'tc_skin_random' ) ) )
@@ -4506,7 +4505,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * @return array( font-family, weight )
       *
       * @package Angilla
-      * @since Angilla 3.3.2
+      * @since Angilla 1.0
       */
       private function angi_fn_get_font_css_prop( $_raw_font , $is_gfont = false ) {
         $_css_exp = explode(':', $_raw_font);
@@ -4529,7 +4528,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       * @return  void
       * @uses wp_enqueue_script() to manage script dependencies
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       function angi_fn_enqueue_script( $_handles = array() ) {
         if ( empty($_handles) )
@@ -4563,7 +4562,7 @@ if ( ! class_exists( 'ANGI_resources' ) ) :
       *
       * @return array of arguments for wp_enqueue_script
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       private function angi_fn_normalize_script_args( $_handle, $_params ) {
         //Do we load the minified version if available ?
@@ -4698,7 +4697,7 @@ if ( ! class_exists( 'ANGI_widgets' ) ) :
     * hook : widget_init
     *
     * @package Angilla
-    * @since Angilla 3.0
+    * @since Angilla 1.0
     */
     function angi_fn_widgets_factory() {
       //default Angilla filtered args

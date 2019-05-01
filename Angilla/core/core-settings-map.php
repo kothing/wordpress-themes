@@ -77,7 +77,6 @@ function angi_fn_get_customizer_map( $get_default = null,  $what = null ) {
 * @return array()
 *
 * @package Angilla
-* @since Angilla 3.3+
 */
 function angi_fn_popul_setting_control_map( $_map, $get_default = null ) {
   $_new_map = array();
@@ -2800,7 +2799,6 @@ function angi_fn_force_remove_section_map( $_sections ) {
 * hook : tc_front_page_option_map
 *
 * @package Angilla
-* @since Angilla 3.0.15
 *
 */
 function angi_fn_generates_featured_pages( $_original_map ) {

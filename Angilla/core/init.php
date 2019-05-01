@@ -276,7 +276,7 @@ if ( ! class_exists( 'ANGI___' ) ) :
         *
         * Thanks to Ben Doherty (https://github.com/bendoh) for the great programming approach
         *
-        * @since Angilla 3.0
+        * @since Angilla 1.0
         */
         function angi_fn_load( $_to_load = array(), $_no_filter = false ) {
             require_once( ANGI_BASE . ANGI_CORE_PATH . 'core-settings-map.php' );

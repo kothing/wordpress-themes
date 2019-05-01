@@ -4,7 +4,7 @@
  * The template for displaying the comments block (wrapper for the comments template)
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 ?>
 <div id="angi-comments" class="comments-area <?php angi_fn_echo('element_class') ?>" <?php angi_fn_echo('element_attributes') ?>>

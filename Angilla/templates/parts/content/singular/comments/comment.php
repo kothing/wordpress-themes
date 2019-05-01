@@ -3,7 +3,7 @@
  * The template for displaying the single comment
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 ?>
 <li <?php comment_class() ?> id="comment-<?php comment_ID() ?>" <?php angi_fn_echo('element_attributes') ?>>

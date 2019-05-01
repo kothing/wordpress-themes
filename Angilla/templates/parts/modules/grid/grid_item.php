@@ -5,7 +5,7 @@
  * In WP loop
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 ?>
 <article <?php angi_fn_echo( 'article_selectors' ) ?> <?php angi_fn_echo('element_attributes') ?>>

@@ -79,7 +79,7 @@ class ANGI_slide_model_class extends ANGI_Model {
   * @param $_view_model = array( $id, $data , $slider_name_id, $id)
   *
   * @package Angilla
-  * @since Angilla 3.3+
+  * @since Angilla 1.0
   *
   * return array( 'button' => array(), $text,
   */

@@ -239,7 +239,6 @@ if ( ! class_exists( 'ANGI_customize' ) ) :
     /**
     * Generates customizer sections, settings and controls
     * @package Angilla
-    * @since Angilla 3.0
     */
     function angi_fn_customize_register( $wp_customize) {
       return $this -> angi_fn_customize_factory (
@@ -255,7 +254,6 @@ if ( ! class_exists( 'ANGI_customize' ) ) :
     /**
      * Defines authorized arguments for panels, sections, settings and controls
      * @package Angilla
-     * @since Angilla 3.0
      */
     function angi_fn_customize_arguments() {
       $args = array(
@@ -336,7 +334,6 @@ if ( ! class_exists( 'ANGI_customize' ) ) :
     /**
      * Generates customizer
      * @package Angilla
-     * @since Angilla 3.0
      */
     function angi_fn_customize_factory ( $wp_customize , $args, $setup ) {
       global $wp_version;
@@ -586,7 +583,6 @@ if ( ! class_exists( 'ANGI_customize' ) ) :
     /**
     * Add fallback admin page.
     * @package Angilla
-    * @since Angilla 1.1
     */
     function angi_fn_add_fallback_page() {
         $theme_page = add_theme_page(
@@ -604,7 +600,6 @@ if ( ! class_exists( 'ANGI_customize' ) ) :
     /**
     * Render fallback admin page.
     * @package Angilla
-    * @since Angilla 1.1
     */
     function angi_fn_fallback_admin_page() {
       ?>
@@ -685,7 +680,6 @@ if ( ! class_exists( 'ANGI_customize_resources' ) ) :
      * Dependency : customize-controls located in wp-includes/script-loader.php
      * Hooked on customize_controls_enqueue_scripts located in wp-admin/customize.php
      * @package Angilla
-     * @since Angilla 3.1.0
      */
     function angi_fn_customize_controls_js_css() {
 

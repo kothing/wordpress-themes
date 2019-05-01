@@ -31,7 +31,6 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
     * @return void
     * updates the tc-thumb-fld post meta with the relevant thumb id and type
     * @package Angilla
-    * @since Angilla 3.3.2
     */
     function angi_fn_refresh_thumbnail( $post_id, $post ) {
       // If this is just a revision, don't send the email.
@@ -65,7 +64,7 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
     * @return void
     * updates the term pickers related options
     * @package Angilla
-    * @since Angilla 3.4.10
+
     */
     function angi_fn_refresh_terms_pickers_options_cb( $term, $tt_id, $taxonomy ) {
       switch ( $taxonomy ) {
@@ -99,7 +98,6 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
     * @return css string
     *
     * @package Angilla
-    * @since Angilla 3.2.10
     */
     function angi_fn_maybe_add_gfonts_to_editor() {
       $_font_pair         = esc_attr( angi_fn_opt('tc_fonts') );
@@ -123,7 +121,6 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
    * hook : 'admin_init'
    * enqueue additional styling for admin screens
    * @package Angilla
-   * @since Angilla 3.0.4
    */
     function angi_fn_admin_style() {
       wp_enqueue_style(
@@ -141,7 +138,6 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
     * Angilla styles the visual editor to resemble the theme style,
     * Loads the editor-style specific (post formats and RTL), the active skin, the user style.css, the user_defined fonts
     * @package Angilla
-    * @since Angilla 3.2.11
     *
     */
     function angi_fn_add_editor_style() {
@@ -177,7 +173,6 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
     * See http://www.tinymce.com/wiki.php/API3:event.tinymce.Editor.onInit
     * http://wordpress.stackexchange.com/questions/120831/how-to-add-custom-css-theme-option-to-tinymce
     * @package Angilla
-    * @since Angilla 3.2.11
     *
     */
     function angi_fn_user_defined_tinymce_css( $init ) {
@@ -266,7 +261,6 @@ if ( ! class_exists( 'ANGI_admin_page' ) ) :
     /**
     * Add fallback admin page.
     * @package Angilla
-    * @since Angilla 1.1
     */
     function angi_fn_add_welcome_page() {
         $_name = __( 'About Angilla' , 'angilla' );
@@ -284,7 +278,6 @@ if ( ! class_exists( 'ANGI_admin_page' ) ) :
       /**
      * Render welcome admin page.
      * @package Angilla
-     * @since Angilla 3.0.4
      */
     function angi_fn_welcome_panel() {
 
@@ -537,7 +530,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
          * checks if WP version strictly < 3.5
          * before 3.5, attachments were not managed as posts. But two filter hooks can are very useful
          * @package Angilla
-         * @since Angilla 2.0
          */
         global $wp_version;
         if (version_compare( $wp_version, '3.5' , '<' ) ) {
@@ -1038,7 +1030,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
       /**
        * Prints the slider box content
        * @package Angilla
-       * @since Angilla 2.0
        */
         function angi_fn_post_slider_box( $post ) {
            // Use nonce for verification
@@ -1084,7 +1075,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
      * Display post slider dynamic content
      * This function is also called by the ajax call back
      * @package Angilla
-     * @since Angilla 2.0
      */
       function angi_fn_get_post_slider_infos( $postid ) {
          //check value is ajax saved ?
@@ -1558,7 +1548,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
       /**
        * Add a slider metabox to attachments
        * @package Angilla
-       * @since Angilla 2.0
        */
       function angi_fn_attachment_meta_box( $id ) {//id, title, callback, post_type, context, priority, callback_args
          if ( ! wp_attachment_is_image( $id ) )
@@ -1581,7 +1570,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
       /**
        * Prints the slider box content
        * @package Angilla
-       * @since Angilla 2.0
        */
         function angi_fn_attachment_slider_box( $post ) {
            // Use nonce for verification
@@ -1627,7 +1615,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
        * Display attachment slider dynamic content
        * This function is also called by the ajax call back function
        * @package Angilla
-       * @since Angilla 2.0
        */
         function angi_fn_get_attachment_slider_infos( $postid ) {
          //check value is ajax saved ?
@@ -1872,7 +1859,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
       /**
        * When the attachment is saved, saves our custom slider data
        * @package Angilla
-       * @since Angilla 2.0
        */
         function angi_fn_slide_save( $post_id ) {
          // verify if this is an auto save routine.
@@ -1966,7 +1952,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
       /**
        * Display slides table dynamic content for the selected slider
        * @package Angilla
-       * @since Angilla 2.0
        */
       function angi_fn_show_slides ( $current_post_slides,$current_attachement_id) {
          //check if we have slides to show
@@ -2091,7 +2076,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
        * Ajax saving of options and meta fields in DB for post and attachement screens
        * works along with tc_ajax_slider.js
        * @package Angilla
-       * @since Angilla 2.0
        */
       function angi_fn_slider_ajax_save( $post_id ) {
 
@@ -2387,7 +2371,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
    * Used in post or attachment context => uses post_slider var to check the context
    * Works along with tc_ajax_slider.js
    * @package Angilla
-   * @since Angilla 2.0
    */
      function angi_fn_slider_cb() {
 
@@ -2509,7 +2492,6 @@ if ( ! class_exists( 'ANGI_meta_boxes' ) ) :
       /**
        * Loads the necessary scripts for the post formats metaboxes
        * @package Angilla
-       * @since Angilla 4.0
        * @hook angi_post_formats_metabox_added
        */
 

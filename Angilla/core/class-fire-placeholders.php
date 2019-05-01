@@ -408,7 +408,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     * hook : wp_ajax_dismiss_img_smartload_help
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     function angi_fn_dismiss_img_smartload_help() {
         check_ajax_referer( 'angi-helpblock-nonce', 'angiHelpBlockNonce' );
@@ -436,7 +436,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     /**
     *
     * @return  bool
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     function angi_fn_is_img_smartload_help_on( $text, $min_img_num = 2 ) {
         //never display when customizing
@@ -530,7 +530,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
 
     /**
     * @return  bool
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     function angi_fn_check_widget_placeholder_transient( $_position ) {
         return 'disabled' != get_transient("tc_widget_placehold_{$_position}");
@@ -566,7 +566,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     /**
     * Do we display the featured page notice ?
     * @return  bool
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     function angi_fn_is_fp_notice_on() {
         //never display when customizing
@@ -600,7 +600,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     * hook : wp_ajax_dismiss_sidenav_help
     *
     * @package Angilla
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     function angi_fn_dismiss_sidenav_help() {
       check_ajax_referer( 'angi-helpblock-nonce', 'angiHelpBlockNonce' );
@@ -612,7 +612,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     /**
     *
     * @return  bool
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     function angi_fn_is_sidenav_help_on() {
       //never display when customizing
@@ -651,7 +651,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     * hook : wp_ajax_dismiss_second_menu_notice
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     function angi_fn_dismiss_second_menu_notice() {
       check_ajax_referer( 'angi-helpblock-nonce', 'angiHelpBlockNonce' );
@@ -663,7 +663,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     /**
     *
     * @return  bool
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     function angi_fn_is_second_menu_placeholder_on() {
       //never display when customizing
@@ -696,7 +696,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     * hook : wp_ajax_dismiss_main_menu_notice
     *
     * @package Angilla
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     function angi_fn_dismiss_main_menu_notice() {
       check_ajax_referer( 'angi-helpblock-nonce', 'angiHelpBlockNonce' );
@@ -709,7 +709,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     /**
     *
     * @return  bool
-    * @since Angilla 3.3+
+    * @since Angilla 1.0.0
     */
     function angi_fn_is_main_menu_notice_on() {
       //never display when customizing
@@ -765,7 +765,7 @@ if ( ! class_exists( 'ANGI_placeholders' ) ) :
     /**
     * Do we display the slider notice ?
     * @return  bool
-    * @since Angilla 3.4+
+    * @since Angilla 1.0.0
     */
     function angi_fn_is_slider_notice_on( $_position = null ) {
       //never display when customizing

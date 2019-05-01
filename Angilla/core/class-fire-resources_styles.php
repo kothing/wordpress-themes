@@ -44,7 +44,6 @@ if ( ! class_exists( 'ANGI_resources_styles' ) ) :
          /**
          * Registers and enqueues Angilla stylesheets
          * @package Angilla
-         * @since Angilla 1.1
          */
          function angi_fn_enqueue_front_styles() {
               $_path       = ANGI_ASSETS_PREFIX . 'front/css/';
@@ -91,7 +90,6 @@ if ( ! class_exists( 'ANGI_resources_styles' ) ) :
          * Writes the sanitized custom CSS from options array into the custom user stylesheet, at the very end (priority 9999)
          * hook : angi_user_options_style
          * @package Angilla
-         * @since Angilla 2.0.7
          */
          function angi_fn_write_custom_css( $_css = null ) {
 

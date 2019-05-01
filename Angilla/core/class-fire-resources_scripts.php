@@ -34,9 +34,7 @@ if ( ! class_exists( 'ANGI_resources_scripts' ) ) :
          /**
          * Helper to get all front end script
          * Fired from the constructor
-         *
          * @package Angilla
-         * @since Angilla 3.3+
          */
          private function angi_fn_get_script_map( $_handles = array() ) {
               $_front_path  =  ANGI_ASSETS_PREFIX . 'front/js/';
@@ -414,7 +412,6 @@ if ( ! class_exists( 'ANGI_resources_scripts' ) ) :
          * @return  void
          * @uses wp_enqueue_script() to manage script dependencies
          * @package Angilla
-         * @since Angilla 3.3+
          */
          function angi_fn_enqueue_script( $_handles = array() ) {
 
@@ -456,7 +453,6 @@ if ( ! class_exists( 'ANGI_resources_scripts' ) ) :
          *
          * @return array of arguments for wp_enqueue_script
          * @package Angilla
-         * @since Angilla 3.3+
          */
          private function angi_fn_normalize_script_args( $_handle, $_params ) {
 

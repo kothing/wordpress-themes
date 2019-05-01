@@ -4,7 +4,7 @@
  *
  *
  * @package Angilla
- * @since Angilla 3.1.0
+ * @since Angilla 1.0
  */
 angi_fn_render_template(
   'content/sidebars/right_sidebar',

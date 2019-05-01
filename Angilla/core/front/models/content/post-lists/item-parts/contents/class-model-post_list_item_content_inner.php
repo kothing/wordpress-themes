@@ -242,7 +242,7 @@ class ANGI_post_list_item_content_inner_model_class extends ANGI_Model {
       * @return  string
       *
       * @package Angilla
-      * @since Angilla 3.3+
+      * @since Angilla 1.0
       */
       protected function angi_fn_add_support_for_shortcode_special_chars( $_content ) {
             return str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $_content ) );

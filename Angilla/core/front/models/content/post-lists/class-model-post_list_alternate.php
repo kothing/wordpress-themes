@@ -481,7 +481,7 @@ class ANGI_post_list_alternate_model_class extends ANGI_Model {
       *
       * @return array() of layout data
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       protected function angi_fn__get_post_list_layout( $model ) {
 
@@ -618,7 +618,7 @@ class ANGI_post_list_alternate_model_class extends ANGI_Model {
 
       /**
       * @package Angilla
-      * @since Angilla 4.0
+      * @since Angilla 1.0
       */
       function angi_fn_setup_text_hooks() {
             //filter the excerpt length
@@ -628,7 +628,7 @@ class ANGI_post_list_alternate_model_class extends ANGI_Model {
 
       /**
       * @package Angilla
-      * @since Angilla 4.0
+      * @since Angilla 1.0
       */
       function angi_fn_reset_text_hooks() {
             remove_filter( 'excerpt_length'     , array( $this , 'angi_fn_set_excerpt_length') , 999 );
@@ -639,7 +639,7 @@ class ANGI_post_list_alternate_model_class extends ANGI_Model {
       * hook : excerpt_length hook
       * @return string
       * @package Angilla
-      * @since Angilla 3.2.0
+      * @since Angilla 1.0
       */
       function angi_fn_set_excerpt_length( $length ) {
             $_custom = $this -> excerpt_length;
@@ -649,7 +649,7 @@ class ANGI_post_list_alternate_model_class extends ANGI_Model {
 
       /**
       * @package Angilla
-      * @since Angilla 4.0
+      * @since Angilla 1.0
       */
       function angi_fn_reset_post_list_items() {
 

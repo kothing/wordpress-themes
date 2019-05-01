@@ -442,7 +442,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
        *
        * @hook wp_generate_attachment_metadata (10 ,2)
        * @package Angilla
-       * @since Angilla 3.0.15
+       * @since Angilla 1.0.0
        * @credits http://wp.tutsplus.com/author/chrisbavota/
        */
         function angi_fn_add_retina_support( $metadata, $attachment_id ) {
@@ -544,7 +544,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * Creates retina-ready images
         *
         * @package Angilla
-        * @since Angilla 3.0.15
+        * @since Angilla 1.0.0
         * @credits http://wp.tutsplus.com/author/chrisbavota/
         */
         function angi_fn_create_retina_images( $file, $width, $height, $crop = false , $_is_intermediate = true) {
@@ -581,7 +581,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
        *
        * @hook delete_attachment
        * @package Angilla
-       * @since Angilla 3.0.15
+       * @since Angilla 1.0.0
        * @credits http://wp.tutsplus.com/author/chrisbavota/
        */
         function angi_fn_clean_retina_images( $attachment_id ) {
@@ -706,7 +706,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * Filter home/blog posts by tax: cat
         * @return modified query object
         * @package Angilla
-        * @since Angilla 3.4.10
+        * @since Angilla 1.0
         */
         function angi_fn_filter_home_blog_posts_by_tax( $query ) {
           $this->_angi_fn_filter_home_blog_posts_by_tax( $query );
@@ -773,7 +773,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * Includes attachments in search results
         * @return modified query object
         * @package Angilla
-        * @since Angilla 3.0.10
+        * @since Angilla 1.0.10
         */
         function angi_fn_include_attachments_in_search( $query ) {
             if (! is_search() || ! apply_filters( 'tc_include_attachments_in_search_results' , false ) )
@@ -796,7 +796,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * In archives, it handles the case where a CPT has been registered and associated with an existing built-in taxonomy like category or post_tag
         * @return modified query object
         * @package Angilla
-        * @since Angilla 3.1.20
+        * @since Angilla 1.0
         */
         function angi_fn_include_cpt_in_lists( $query ) {
           if (
@@ -909,7 +909,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * Callback of slider_full_size and slider_size filters
         * hook : might be called from after_setup_theme
         * @package Angilla
-        * @since Angilla 3.2.0
+        * @since Angilla 1.0
         *
         */
         function angi_fn_set_slider_img_height( $_default_size ) {
@@ -926,7 +926,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * Callback of tc_grid_full_size and tc_grid_size filters
         *
         * @package Angilla
-        * @since Angilla 3.1.12
+        * @since Angilla 1.0
         *
         */
         function angi_fn_set_grid_img_height( $_default_size ) {
@@ -977,7 +977,7 @@ if ( ! class_exists( 'ANGI_BASE' ) ) :
         * hook : after_setup_theme
         *
         * @package Angilla
-        * @since Angilla 3.2.3
+        * @since Angilla 1.0
         */
         function angi_fn_init_properties() {
               //fire an action hook before theme main properties have been set up

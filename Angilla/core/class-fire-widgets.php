@@ -27,7 +27,6 @@ if ( ! class_exists( 'ANGI_widgets' ) ) :
     * hook : widget_init
     *
     * @package Angilla
-    * @since Angilla 3.0
     */
     function angi_fn_widgets_factory() {
       //default Angilla filtered args

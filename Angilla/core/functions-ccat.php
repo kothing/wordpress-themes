@@ -321,7 +321,7 @@ if ( ! function_exists( 'angi_fn_maybe_register' ) ) {
 /**
 * hook : 'wp_head'
 * @package Angilla
-* @since Angilla 3.3.0
+* @since Angilla 1.0
 */
 function angi_fn_wp_filters() {
     add_filter( 'the_content'     , 'angi_fn_fancybox_content_filter'  );
@@ -349,7 +349,7 @@ function angi_fn_wp_filters() {
 * This function returns the filtered global layout defined in ANGI_init
 *
 * @package Angilla
-* @since Angilla 4.0
+* @since Angilla 1.0
 */
 function angi_fn_get_global_layout() {
   return apply_filters( 'tc_global_layout' , ANGI_init::$instance -> global_layout );
@@ -361,7 +361,7 @@ function angi_fn_get_global_layout() {
 *
 *
 * @package Angilla
-* @since Angilla 4.0
+* @since Angilla 1.0
 */
 function angi_fn_get_content_breadth() {
   $sidebar_layout                 = angi_fn_get_layout( angi_fn_get_id() , 'sidebar' );
@@ -493,7 +493,7 @@ function angi_fn_get_page_wrapper_class() {
 * This function returns the column content wrapper class
 *
 * @package Angilla
-* @since Angilla 3.5
+* @since Angilla 1.0
 */
 function angi_fn_get_column_content_wrapper_class() {
     return apply_filters( 'angi_column_content_wrapper_classes' , array( 'flex-row', 'row', 'column-content-wrapper') );
@@ -504,7 +504,7 @@ function angi_fn_get_column_content_wrapper_class() {
 * This function returns the main container class
 *
 * @package Angilla
-* @since Angilla 3.5
+* @since Angilla 1.0
 */
 function angi_fn_get_main_container_class() {
     return apply_filters( 'angi_main_container_classes' , array('container') );
@@ -514,7 +514,7 @@ function angi_fn_get_main_container_class() {
 * This function returns the article container class
 *
 * @package Angilla
-* @since Angilla 3.5
+* @since Angilla 1.0
 */
 function angi_fn_get_article_container_class() {
     return apply_filters( 'angi_article_container_class' , array( angi_fn_get_layout( angi_fn_get_id() , 'class' ) , 'article-container' ) );
@@ -527,7 +527,7 @@ function angi_fn_get_article_container_class() {
  * Add an optional rel="tc-fancybox[]" attribute to all images embedded in a post.
  *
  * @package Angilla
- * @since Angilla 2.0.7
+ * @since Angilla 1.0
  */
 function angi_fn_fancybox_content_filter( $content) {
     $tc_fancybox = esc_attr( angi_fn_opt( 'tc_fancybox' ) );
@@ -872,7 +872,7 @@ endif;
 * @return  array of classes
 *
 * @package Angilla
-* @since Angilla 3.3.2
+* @since Angilla 1.0
 */
 function angi_fn_set_post_list_context_class( $_class ) {
     if ( angi_fn_is_list_of_posts() )
@@ -1306,7 +1306,7 @@ function angi_fn_get_id_from_attachment( $post_id ) {
 * Display or return the thumbnail view
 * @param : thumbnail model (img, width, height), layout value, echo bool
 * @package Angilla
-* @since Angilla 3.0.10
+* @since Angilla 1.0
 */
 function angi_fn_render_thumb_view( $_thumb_model , $layout = 'span3', $_echo = true ) {
     if ( empty( $_thumb_model ) )
@@ -1430,7 +1430,7 @@ if ( ! function_exists( 'angi_fn_get_placeholder_thumb' ) ) {
 * @return  array of image attributes
 *
 * @package Angilla
-* @since Angilla 3.4.16
+* @since Angilla 1.0
 */
 function angi_fn_remove_srcset_attr( $attr ) {
     if ( isset( $attr[ 'srcset' ] ) ) {

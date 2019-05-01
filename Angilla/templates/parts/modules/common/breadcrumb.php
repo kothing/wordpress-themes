@@ -3,7 +3,7 @@
  * The template for displaying the breadcrumb
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 ?>
 <div class="angi-hot-crumble container page-breadcrumbs" role="navigation" <?php angi_fn_echo('element_attributes') ?>>

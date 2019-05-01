@@ -3,7 +3,7 @@
  * The template for displaying the site header
  *
  * @package Angilla
- * @since Angilla 3.5.0
+ * @since Angilla 1.0.0
  */
 ?>
 <?php do_action( '__before_header' ) ?>

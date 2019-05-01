@@ -9,7 +9,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.0.15
+  * @since Angilla 1.0
   *
   */
   protected function angi_fn_get_the_slides( $slider_name_id, $img_size = 'slider-full' ) {
@@ -32,7 +32,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   /* Steps;
@@ -86,7 +86,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   *
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_get_pre_posts_slides( $args ){
@@ -172,7 +172,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * Returns the array of eligible posts for the slider of posts
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   private function angi_fn_query_posts_slider( $args = array() ) {
@@ -221,7 +221,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * the base for the actual post slide model
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_single_post_slide_pre_model( $_post , $img_size, $args ){
@@ -268,7 +268,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * Returns and array of slides with data
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_single_post_slide_model( $slider_name_id, $_post_slide , $common, $img_size ) {
@@ -323,7 +323,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * @return string
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_post_slide_title( $_post, $ID ) {
@@ -339,7 +339,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * @return string
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_post_slide_excerpt( $_post, $ID ) {
@@ -355,7 +355,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * @return string
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   function angi_fn_get_post_slide_button_text( $button_text ) {
@@ -375,7 +375,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * and custom trimming.
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   // move this into ANGI_utils?
@@ -399,7 +399,7 @@ class ANGI_slider_of_posts_model_class extends ANGI_slider_model_class {
   * and custom trimming.
   *
   * @package Angilla
-  * @since Angilla 3.4.9
+  * @since Angilla 1.0
   *
   */
   // move this into ANGI_utils?

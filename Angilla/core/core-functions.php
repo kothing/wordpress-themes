@@ -10,7 +10,7 @@
 *
 * Used everywhere in Angilla. Can pass up to five variables to the filter callback.
 *
-* @since Angilla 3.0
+* @since Angilla 1.0
 */
 if( ! function_exists( 'angi_fn__f' ) ) :
     function angi_fn__f( $tag , $value = null , $arg_one = null , $arg_two = null , $arg_three = null , $arg_four = null , $arg_five = null) {
@@ -466,7 +466,7 @@ function angi_fn_opt( $option_name , $option_group = null, $use_default = true )
 * In live context (not customizing || admin) cache the theme options
 *
 * @package Angilla
-* @since Angilla 3.2.0
+* @since Angilla 1.0
 */
 function angi_fn_cache_db_options($opt_group = null) {
     $opt_group = is_null($opt_group) ? ANGI_THEME_OPTIONS : $opt_group;
@@ -481,7 +481,7 @@ function angi_fn_cache_db_options($opt_group = null) {
 * @return bool
 *
 * @package Angilla
-* @since Angilla 3.4.9
+* @since Angilla 1.0
 */
 function angi_fn_is_angilla_option( $option_key ) {
     $_is_angi_option = in_array( substr( $option_key, 0, 3 ), apply_filters( 'angi_options_prefixes', array( ANGI_OPT_PREFIX ) ) );
@@ -497,7 +497,7 @@ function angi_fn_is_angilla_option( $option_key ) {
 * hook : after_setup_theme (?)
 *
 * @package Angilla
-* @since Angilla 3.1.11
+* @since Angilla 1.0
 */
 function angi_fn_get_default_options() {
     //ANGI___::$db_options is set in the ANGI_BASE::angi_fn_init_properties()
@@ -537,7 +537,7 @@ function angi_fn_get_default_options() {
 * Generates the default options array from a customizer map + add slider option
 *
 * @package Angilla
-* @since Angilla 3.0.3
+* @since Angilla 1.0
 */
 function angi_fn_generate_default_options( $map, $option_group = null ) {
     //do we have to look in a specific group of option (plugin?)
@@ -605,7 +605,7 @@ function angi_fn_generate_theme_setting_list() {
 * @return  void
 *
 * @package Angilla
-* @since Angilla 3.4+
+* @since Angilla 1.0
 */
 function angi_fn_set_option( $option_name , $option_value, $option_group = null ) {
     //Always make sure we have an option group, otherwise nothing will be written
@@ -712,7 +712,7 @@ function angi_fn_setup_started_using_theme_option_and_constants() {
 * check if user started to use the theme before ( strictly < ) the requested version
 *
 * @package Angilla
-* @since Angilla 3.2.9
+* @since Angilla 1.0
 */
 function angi_fn_user_started_before_version( $_angi_ver ) {
 
@@ -777,7 +777,7 @@ function angi_fn_user_started_with_current_version() {
 * @parameter string name or google compliant suffix for href link
 *
 * @package Angilla
-* @since Angilla 3.2.9
+* @since Angilla 1.0
 */
 function angi_fn_get_font( $_what = 'list' , $_requested = null ) {
     $_to_return = ( 'list' == $_what ) ? array() : false;
@@ -833,7 +833,7 @@ function angi_fn_get_font( $_what = 'list' , $_requested = null ) {
 * Ex: passing $aufocus = array('control' => 'tc_front_slider') will produce the query arg 'autofocus'=>array('control' => 'tc_theme_options[tc_front_slider]'
 *
 * @return url string
-* @since Angilla 3.4+
+* @since Angilla 1.0
 */
 function angi_fn_get_customizer_url( $autofocus = null, $control_wrapper = 'tc_theme_options' ) {
    $_current_url       = ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -1075,7 +1075,7 @@ function angi_fn_date_diff( $_date_one , $_date_two ) {
 * Return boolean OR number of days since last update OR PHP version < 5.2
 *
 * @package Angilla
-* @since Angilla 3.2.6
+* @since Angilla 1.0
 */
 function angi_fn_post_has_update( $_bool = false) {
     //php version check for DateTime
@@ -1195,7 +1195,7 @@ function angi_fn_get_id()  {
 *
 * @return string
 * @package Angilla
-* @since Angilla 3.3.0
+* @since Angilla 1.0
 */
 function angi_fn_parse_imgs( $_html ) {
     $_bool = is_feed() || is_preview() || ( wp_is_mobile() && apply_filters( 'angi_disable_img_smart_load_mobiles', false ) );
@@ -1234,7 +1234,7 @@ function angi_fn_parse_imgs( $_html ) {
 *
 * @return string
 * @package Angilla
-* @since Angilla 3.3.0
+* @since Angilla 1.0
 */
 function angi_fn_regex_callback( $matches ) {
     $_placeholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
@@ -1282,7 +1282,7 @@ function angi_fn_is_real_home() {
 /**
 * Check if we show posts or page content on home page
 *
-* @since Angilla 3.0.6
+* @since Angilla 1.0
 *
 */
 function angi_fn_is_home_empty() {
@@ -1326,7 +1326,7 @@ function angi_fn_wp_title( $title, $sep ) {
 /**
 * Return object post type
 *
-* @since Angilla 3.0.10
+* @since Angilla 1.0
 *
 */
 function angi_fn_get_post_type() {
@@ -1381,7 +1381,7 @@ function angi_fn_is_attachment_image() {
 * Returns the layout choices array
 *
 * @package Angilla
-* @since Angilla 3.1.0
+* @since Angilla 1.0
 */
 function angi_fn_layout_choices() {
     $global_layout  = apply_filters( 'tc_global_layout' , ANGI_init::$instance -> global_layout );
@@ -1396,7 +1396,7 @@ function angi_fn_layout_choices() {
 /**
 * Retrieves slider names and generate the select list
 * @package Angilla
-* @since Angilla 3.0.1
+* @since Angilla 1.0
 */
 function angi_fn_slider_choices() {
   $__options      =   get_option('tc_theme_options');
@@ -1425,7 +1425,7 @@ function angi_fn_slider_choices() {
 /**
  * adds sanitization callback funtion : textarea
  * @package Angilla
- * @since Angilla 1.1.4
+ * @since Angilla 1.0
  */
 function angi_fn_sanitize_textarea( $value) {
   $value = esc_html( $value);
@@ -1437,7 +1437,7 @@ function angi_fn_sanitize_textarea( $value) {
 /**
  * adds sanitization callback funtion : number
  * @package Angilla
- * @since Angilla 1.1.4
+ * @since Angilla 1.0
  */
 function angi_fn_sanitize_number( $value) {
   if ( ! $value || is_null($value) )
@@ -1452,7 +1452,7 @@ function angi_fn_sanitize_number( $value) {
 /**
  * adds sanitization callback funtion : url
  * @package Angilla
- * @since Angilla 1.1.4
+ * @since Angilla 1.0
  */
 function angi_fn_sanitize_url( $value) {
   $value = esc_url( $value);
@@ -1462,7 +1462,7 @@ function angi_fn_sanitize_url( $value) {
 /**
  * adds sanitization callback funtion : email
  * @package Angilla
- * @since Angilla 3.4.11
+ * @since Angilla 1.0
  */
 function angi_fn_sanitize_email( $value) {
   $sanitized_value = sanitize_email( $value );
@@ -1476,7 +1476,7 @@ function angi_fn_sanitize_email( $value) {
 /**
  * adds sanitization callback funtion : colors
  * @package Angilla
- * @since Angilla 1.1.4
+ * @since Angilla 1.0
  */
 function angi_fn_sanitize_hex_color( $color ) {
   if ( $unhashed = sanitize_hex_color_no_hash( $color ) )
@@ -1489,7 +1489,7 @@ function angi_fn_sanitize_hex_color( $color ) {
 /**
 * Change upload's path to relative instead of absolute
 * @package Angilla
-* @since Angilla 3.1.11
+* @since Angilla 1.0
 */
 function angi_fn_sanitize_uploads( $url ) {
   $upload_dir = wp_upload_dir();
@@ -1505,9 +1505,7 @@ function angi_fn_sanitize_uploads( $url ) {
 *
 *
 * @package Angilla
-* @since Angilla 3.0.10
-*
-* @since Angilla 3.4.55 Added the ability to retrieve them as array
+* @since Angilla 1.0
 * @param $output_type optional. Return type "string" or "array"
 */
 

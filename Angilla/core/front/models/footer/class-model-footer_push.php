@@ -15,7 +15,7 @@ class ANGI_footer_push_model_class extends ANGI_Model {
   * @return css string
   *
   * @package Angilla
-  * @since Angilla 3.3.27
+  * @since Angilla 1.0.0
   */
   function angi_fn_user_options_style_cb( $_css ){
     $_css = sprintf("%s\n%s",
