@@ -1,0 +1,914 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mipress\n"
+"POT-Creation-Date: 2019-03-16 22:27+0800\n"
+"PO-Revision-Date: 2019-03-16 22:32+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "看起来这个地方什么都没有发现。也许试试下面的链接或搜索？"
+
+#. translators: 1: title.
+#: comments.php:33
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "一条评论在 &ldquo;%1$s&rdquo;"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s 评论于 &ldquo;%2$s&rdquo;"
+
+#: comments.php:49 comments.php:70
+msgid "Comment navigation"
+msgstr "评论导航"
+
+#: comments.php:52 comments.php:73
+msgid "Older Comments"
+msgstr "较旧的评论"
+
+#: comments.php:53 comments.php:74
+msgid "Newer Comments"
+msgstr "较新的评论"
+
+#: comments.php:87
+msgid "Comments are closed."
+msgstr "评论已关闭。"
+
+#: functions.php:61
+msgid "Primary"
+msgstr "首要"
+
+#: functions.php:62 template-parts/navigation/navigation-social.php:2
+msgid "Social Menu"
+msgstr "社交菜单"
+
+#: functions.php:174
+msgid "Sidebar"
+msgstr "边栏"
+
+#: functions.php:176
+msgid "Add widgets here."
+msgstr "在此处添加小工具"
+
+#: functions.php:184
+msgid "Footer 1"
+msgstr "页脚 I"
+
+#: functions.php:186 functions.php:196 functions.php:206
+msgid "Add widgets here to appear in your footer."
+msgstr "此处添加小工具以在页脚中显示"
+
+#: functions.php:194
+msgid "Footer 2"
+msgstr "页脚 II"
+
+#: functions.php:204
+msgid "Footer 3"
+msgstr "页脚 III"
+
+#: functions.php:232
+msgctxt "Open Sans: on or off"
+msgid "on"
+msgstr "开启"
+
+#: functions.php:238
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr "开启"
+
+#: functions.php:314
+msgid "expand child menu"
+msgstr "展开子菜单"
+
+#: functions.php:315
+msgid "collapse child menu"
+msgstr "折叠子菜单"
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "跳过内容"
+
+#: inc/breadcrumb.php:22
+msgid "Home"
+msgstr "首页"
+
+#. translators: 1: before text/html, 2: after text/html.
+#: inc/breadcrumb.php:24
+#, php-format
+msgid "%1$s Archive for %2$s"
+msgstr "%1$s 归档 for %2$s"
+
+#. translators: 1: before text/html, 2: after text/html.
+#: inc/breadcrumb.php:26
+#, php-format
+msgid "%1$sSearch results for: %2$s"
+msgstr "%1$s搜索结果 for: %2$s"
+
+#. translators: 1: before text/html, 2: after text/html.
+#: inc/breadcrumb.php:28
+#, php-format
+msgid "%1$sPosts tagged %2$s"
+msgstr "%1$s日志标签 %2$s"
+
+#. translators: 1: before text/html, 2: after text/html.
+#: inc/breadcrumb.php:30
+#, php-format
+msgid "%1$sView all posts by %2$s"
+msgstr "%1$s查看所有日志 by %2$s"
+
+#: inc/breadcrumb.php:31
+msgid "Error 404"
+msgstr "404 错误!"
+
+#: inc/breadcrumb.php:80 inc/breadcrumb.php:83 inc/breadcrumb.php:88
+#: inc/breadcrumb.php:94 inc/template-tags.php:122
+msgid "Y"
+msgstr "Y"
+
+#: inc/breadcrumb.php:83 inc/breadcrumb.php:90
+msgid "F"
+msgstr "F"
+
+#: inc/breadcrumb.php:85
+msgid "d"
+msgstr "d"
+
+#. translators: %s: current page number.
+#: inc/breadcrumb.php:176
+#, php-format
+msgid "Page %s"
+msgstr "页面 %s"
+
+#: inc/customizer/custom-controls.php:27
+msgid "All Categories"
+msgstr "全部类目"
+
+#: inc/customizer/custom-controls.php:35
+msgid ""
+"Hold down the Ctrl (windows) / Command (Mac) button to select multiple "
+"options."
+msgstr "按住 Ctrl (windows)/命令 (Mac) 按钮以选择多个选项。"
+
+#: inc/customizer/customizer.php:31
+msgid ""
+"When disabled/shown only on homepage, Site Title and Tagline will only be "
+"removed only from user view for accessibility purpose."
+msgstr ""
+"当仅在主页上禁用/显示时，站点标题和标语将仅从用户视图中移除，以方便访问"
+
+#: inc/customizer/customizer.php:33 inc/customizer/header-media.php:29
+#: inc/customizer/theme-options-1-featured-slider.php:25
+#: inc/customizer/theme-options-2-hero-content.php:25
+#: inc/customizer/theme-options-5-services.php:26
+#: inc/customizer/theme-options-6-contact.php:27
+msgid "Enable on"
+msgstr "启用于"
+
+#: inc/customizer/customizer.php:46
+msgid "Content Alignment"
+msgstr "内容对齐"
+
+#: inc/customizer/customizer.php:50
+msgid "Center Align"
+msgstr "居中"
+
+#: inc/customizer/customizer.php:51
+msgid "Left Align"
+msgstr "居左"
+
+#: inc/customizer/customizer.php:52
+msgid "Right Align"
+msgstr "居右"
+
+#: inc/customizer/customizer.php:75
+msgid ""
+"Caution: Reset all settings to default. Refresh the page after save to view "
+"full effects."
+msgstr "注意：将所有设置重置为默认值。保存后刷新页面以查看完整效果。"
+
+#: inc/customizer/customizer.php:76
+msgid "Reset all settings"
+msgstr "重置默认"
+
+#: inc/customizer/customizer.php:83
+msgid "Check to reset all settings to default"
+msgstr "选中以重置所有设置"
+
+#: inc/customizer/header-media.php:14
+msgid ""
+"If you add video, it will only show up on Homepage/FrontPage. Other Pages "
+"will use Header/Post/Page Image depending on your selection of option. "
+"Header Image will be used as a fallback while the video loads "
+msgstr ""
+"如果您添加视频，它将仅显示在首页/头版页上。 其他页面将使用页眉/帖子/页面图"
+"像，具体取决于您选择的选项。 在加载视频时，标题图像将用作后备图像"
+
+#: inc/customizer/header-media.php:21 inc/customizer/helpers.php:93
+msgid "Homepage / Frontpage"
+msgstr "首页/头版"
+
+#: inc/customizer/header-media.php:22
+msgid "Excluding Homepage"
+msgstr "不包括主页"
+
+#: inc/customizer/header-media.php:23
+msgid "Excluding Homepage, Page/Post Featured Image"
+msgstr "不包括首页/页面/特色图片"
+
+#: inc/customizer/header-media.php:24 inc/customizer/helpers.php:94
+msgid "Entire Site"
+msgstr "整个网站"
+
+#: inc/customizer/header-media.php:25
+msgid "Entire Site, Page/Post Featured Image"
+msgstr "整个网站/ 页面/特色图片"
+
+#: inc/customizer/header-media.php:26
+msgid "Pages and Posts"
+msgstr "页面和日志"
+
+#: inc/customizer/header-media.php:27 inc/customizer/helpers.php:95
+#: inc/customizer/theme-options-7-layout.php:76
+msgid "Disabled"
+msgstr "禁用"
+
+#: inc/customizer/helpers.php:108
+msgid "1 column"
+msgstr "1 栏"
+
+#: inc/customizer/helpers.php:109
+msgid "2 columns"
+msgstr "2 栏"
+
+#: inc/customizer/helpers.php:110
+msgid "3 columns"
+msgstr "3 栏"
+
+#: inc/customizer/helpers.php:111
+msgid "4 columns"
+msgstr "4 栏"
+
+#: inc/customizer/helpers.php:124
+msgid "Demo"
+msgstr "预览"
+
+#: inc/customizer/helpers.php:125
+msgid "Post"
+msgstr "日志"
+
+#: inc/customizer/helpers.php:126
+#: inc/customizer/theme-options-1-featured-slider.php:123
+#: inc/customizer/theme-options-2-hero-content.php:36
+#: inc/customizer/theme-options-3-project-slider.php:89
+#: inc/customizer/theme-options-5-services.php:89
+#: inc/customizer/theme-options-6-contact.php:120
+#: inc/template-functions.php:318 template-parts/content/content-page.php:29
+#: template-parts/content/content-single.php:41
+#: template-parts/hero-content/post-type-hero.php:72
+msgid "Page"
+msgstr "页面"
+
+#: inc/customizer/helpers.php:127
+msgid "Category"
+msgstr "类目"
+
+#: inc/customizer/helpers.php:128
+msgid "Image"
+msgstr "图像"
+
+#: inc/customizer/helpers.php:141
+msgid "Default(Older Posts/Newer Posts)"
+msgstr "默认（较旧的日志/较新的日志）"
+
+#: inc/customizer/helpers.php:142
+msgid "Numeric"
+msgstr "数字"
+
+#: inc/customizer/helpers.php:164
+msgid "-- Select --"
+msgstr "-- 选择 --"
+
+#. translators: 1: post id.
+#: inc/customizer/helpers.php:168
+#, php-format
+msgid "#%d (no title)"
+msgstr "#%d (无标题)"
+
+#: inc/customizer/theme-options-1-featured-slider.php:16
+msgid "Featured Slider"
+msgstr "特色滑块 Featured Slider"
+
+#: inc/customizer/theme-options-1-featured-slider.php:37
+msgid "Transition Effect"
+msgstr "过渡效果"
+
+#: inc/customizer/theme-options-1-featured-slider.php:48
+#: inc/customizer/theme-options-1-featured-slider.php:63
+msgid "seconds(s)"
+msgstr "秒(s)"
+
+#: inc/customizer/theme-options-1-featured-slider.php:52
+msgid "Transition Delay"
+msgstr "过渡延迟"
+
+#: inc/customizer/theme-options-1-featured-slider.php:67
+msgid "Transition Length"
+msgstr "过渡时长"
+
+#: inc/customizer/theme-options-1-featured-slider.php:78
+msgid "Image Loader"
+msgstr "图像加载"
+
+#: inc/customizer/theme-options-1-featured-slider.php:90
+#: inc/customizer/theme-options-5-services.php:69
+msgid "Save and refresh the page if No. of items is changed"
+msgstr "如果更改了项目数, 则保存并刷新页面"
+
+#: inc/customizer/theme-options-1-featured-slider.php:96
+#: inc/customizer/theme-options-3-project-slider.php:74
+#: inc/customizer/theme-options-5-services.php:74
+msgid "No of Items"
+msgstr "项目数量"
+
+#: inc/customizer/theme-options-1-featured-slider.php:109
+#: inc/customizer/theme-options-2-hero-content.php:58
+msgid "Display Content"
+msgstr "显示内容"
+
+#: inc/customizer/theme-options-1-featured-slider.php:140
+msgid "Fade"
+msgstr "Fade"
+
+#: inc/customizer/theme-options-1-featured-slider.php:141
+msgid "Fade Out"
+msgstr "Fade Out"
+
+#: inc/customizer/theme-options-1-featured-slider.php:142
+msgid "None"
+msgstr "None"
+
+#: inc/customizer/theme-options-1-featured-slider.php:143
+msgid "Scroll Horizontal"
+msgstr "Scroll Horizontal"
+
+#: inc/customizer/theme-options-1-featured-slider.php:144
+msgid "Scroll Vertical"
+msgstr "Scroll Vertical"
+
+#: inc/customizer/theme-options-1-featured-slider.php:145
+msgid "Flip Horizontal"
+msgstr "Flip Horizontal"
+
+#: inc/customizer/theme-options-1-featured-slider.php:146
+msgid "Flip Vertical"
+msgstr "Flip Vertical"
+
+#: inc/customizer/theme-options-1-featured-slider.php:147
+msgid "Tile Slide"
+msgstr "Tile Slide"
+
+#: inc/customizer/theme-options-1-featured-slider.php:148
+msgid "Tile Blind"
+msgstr "Tile Blind"
+
+#: inc/customizer/theme-options-1-featured-slider.php:149
+msgid "Shuffle"
+msgstr "Shuffle"
+
+#: inc/customizer/theme-options-1-featured-slider.php:163
+msgid "True"
+msgstr "True"
+
+#: inc/customizer/theme-options-1-featured-slider.php:164
+msgid "Wait"
+msgstr "Wait"
+
+#: inc/customizer/theme-options-1-featured-slider.php:165
+msgid "False"
+msgstr "False"
+
+#: inc/customizer/theme-options-1-featured-slider.php:179
+msgid "Show Excerpt"
+msgstr "显示摘录"
+
+#: inc/customizer/theme-options-1-featured-slider.php:180
+msgid "Full Content"
+msgstr "全部内容"
+
+#: inc/customizer/theme-options-1-featured-slider.php:181
+msgid "Hide Content"
+msgstr "隐藏内容"
+
+#: inc/customizer/theme-options-10-search.php:18
+msgid "Search Options"
+msgstr "搜索选项 Search"
+
+#: inc/customizer/theme-options-10-search.php:23 searchform.php:11
+#: template-parts/navigation/navigation-primary.php:50
+msgid "Search"
+msgstr "搜索 Search"
+
+#: inc/customizer/theme-options-10-search.php:25
+msgid "Search Text"
+msgstr "搜索文字"
+
+#: inc/customizer/theme-options-11-pagination.php:20
+msgid "Pagination Options"
+msgstr "分页选项 Pagination"
+
+#: inc/customizer/theme-options-11-pagination.php:28
+msgid "Pagination type"
+msgstr "分页类型"
+
+#: inc/customizer/theme-options-12-scrollup.php:18
+msgid "Scrollup Options"
+msgstr "上滑选项 Scrollup"
+
+#: inc/customizer/theme-options-12-scrollup.php:24
+msgid "Disable Scroll Up"
+msgstr "禁用 Scroll Up"
+
+#: inc/customizer/theme-options-2-hero-content.php:15
+msgid "Hero Content"
+msgstr "主角内容 Hero Content"
+
+#: inc/customizer/theme-options-2-hero-content.php:46
+msgid "Check to disable title"
+msgstr "选中以禁用标题"
+
+#: inc/customizer/theme-options-3-project-slider.php:17
+#: inc/customizer/theme-options-3-project-slider.php:46
+#: template-parts/project-slider/display-project-slider.php:18
+msgid "Project Slider"
+msgstr "项目展示 Project Slider"
+
+#: inc/customizer/theme-options-3-project-slider.php:27
+msgid "Enable Project Slider on"
+msgstr "启用项目展示于"
+
+#: inc/customizer/theme-options-3-project-slider.php:39
+#: inc/customizer/theme-options-5-services.php:38
+msgid "Background Image"
+msgstr "背景图像"
+
+#: inc/customizer/theme-options-3-project-slider.php:49
+#: inc/customizer/theme-options-5-services.php:48
+#: inc/customizer/theme-options-6-contact.php:38
+#: inc/widget-social-icons.php:116
+msgid "Title"
+msgstr "标题"
+
+#: inc/customizer/theme-options-3-project-slider.php:58
+#: inc/customizer/theme-options-5-services.php:58
+msgid "Sub Title"
+msgstr "副标题"
+
+#: inc/customizer/theme-options-3-project-slider.php:69
+msgid "Save and refresh the page if No. of Items is changed"
+msgstr "如果更改了项目数, 则保存并刷新页面"
+
+#: inc/customizer/theme-options-4-front-blog.php:17
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on "
+"the front page"
+msgstr "只有属于此处选定类目的日志才会显示在首页上"
+
+#: inc/customizer/theme-options-4-front-blog.php:19
+msgid "Front Blog Options"
+msgstr "上滑选项 Scrollup"
+
+#. translators: 1: list of categories.
+#: inc/customizer/theme-options-4-front-blog.php:26 inc/template-tags.php:53
+msgid "Categories"
+msgstr "类目"
+
+#: inc/customizer/theme-options-4-front-blog.php:36 index.php:24
+msgid "Blog"
+msgstr "博客"
+
+#: inc/customizer/theme-options-4-front-blog.php:37
+msgid "Recent Posts Heading"
+msgstr "最近发布日志标题"
+
+#: inc/customizer/theme-options-4-front-blog.php:46 index.php:25
+msgid "Follow my blogs about intresting stuff."
+msgstr "关注我的博客获取更多有趣的内容。"
+
+#: inc/customizer/theme-options-4-front-blog.php:47
+msgid "Recent Posts Sub Heading"
+msgstr "最近发布日志副标题"
+
+#: inc/customizer/theme-options-5-services.php:15
+#: inc/customizer/theme-options-5-services.php:45
+#: template-parts/services/display-services.php:18
+msgid "Services"
+msgstr "服务信息 Services"
+
+#: inc/customizer/theme-options-6-contact.php:17
+#: inc/customizer/theme-options-6-contact.php:35
+#: template-parts/contact/display-contact.php:17
+msgid "Contact"
+msgstr "联络 Contact"
+
+#: inc/customizer/theme-options-6-contact.php:46
+#: template-parts/contact/display-contact.php:18
+msgid ""
+"For further details about my services, availability and inquiry, please fell "
+"free to contact me with the information below"
+msgstr ""
+"有关服务内容、可用性和查询等更多详细信息，请随时与我联系，并提供以下联络信息"
+
+#: inc/customizer/theme-options-6-contact.php:49
+msgid "Description"
+msgstr "描述"
+
+#: inc/customizer/theme-options-6-contact.php:57
+#: inc/customizer/theme-options-6-contact.php:70
+#: template-parts/contact/display-contact.php:58
+msgid "Phone"
+msgstr "电话"
+
+#: inc/customizer/theme-options-6-contact.php:60
+msgid "Phone Title"
+msgstr "电话标题"
+
+#: inc/customizer/theme-options-6-contact.php:77
+#: inc/customizer/theme-options-6-contact.php:90
+#: template-parts/contact/display-contact.php:61
+msgid "Email"
+msgstr "邮箱"
+
+#: inc/customizer/theme-options-6-contact.php:80
+msgid "Email Title"
+msgstr "邮箱标题"
+
+#: inc/customizer/theme-options-6-contact.php:97
+#: inc/customizer/theme-options-6-contact.php:110
+#: template-parts/contact/display-contact.php:64
+msgid "Address"
+msgstr "地址"
+
+#: inc/customizer/theme-options-6-contact.php:100
+msgid "Address Title"
+msgstr "地址标题"
+
+#: inc/customizer/theme-options-7-layout.php:17
+msgid "Layout Options"
+msgstr "布局选项 Layout"
+
+#: inc/customizer/theme-options-7-layout.php:27
+msgid "Site Layout"
+msgstr "网站布局"
+
+#: inc/customizer/theme-options-7-layout.php:31
+msgid "Fluid"
+msgstr "Fluid"
+
+#: inc/customizer/theme-options-7-layout.php:32
+msgid "Boxed"
+msgstr "Boxed"
+
+#: inc/customizer/theme-options-7-layout.php:42
+msgid "Default Layout"
+msgstr "默认布局"
+
+#: inc/customizer/theme-options-7-layout.php:46
+#: inc/customizer/theme-options-7-layout.php:61
+msgid "Right Sidebar ( Content, Primary Sidebar )"
+msgstr "右边栏 ( 内容, 边栏 )"
+
+#: inc/customizer/theme-options-7-layout.php:47
+#: inc/customizer/theme-options-7-layout.php:62
+msgid "No Sidebar"
+msgstr "无边栏"
+
+#: inc/customizer/theme-options-7-layout.php:57
+msgid "Homepage/Archive Layout"
+msgstr "首页/归档页布局"
+
+#: inc/customizer/theme-options-7-layout.php:72
+msgid "Single Page/Post Image Layout"
+msgstr "单页面/日志图像页面布局"
+
+#: inc/customizer/theme-options-7-layout.php:77 inc/metabox/metabox.php:79
+#: inc/metabox/metabox.php:86
+msgid "Enable"
+msgstr "启用"
+
+#: inc/customizer/theme-options-8-breadcrumb.php:17
+msgid ""
+"Breadcrumbs are a great way of letting your visitors find out where they are "
+"on your site with just a glance."
+msgstr "导航路径是让您的访客一目了然地找到他们在您网站上的位置的绝佳方式。"
+
+#: inc/customizer/theme-options-8-breadcrumb.php:19
+msgid "Breadcrumb"
+msgstr "导航路径 Breadcrumb"
+
+#: inc/customizer/theme-options-8-breadcrumb.php:27
+msgid "Check to enable Breadcrumb"
+msgstr "选中以启用导航路径"
+
+#: inc/customizer/theme-options-8-breadcrumb.php:36
+msgid "Check to enable Breadcrumb on Homepage"
+msgstr "选中在首页上启用导航路径"
+
+#: inc/customizer/theme-options-8-breadcrumb.php:49
+msgid "Separator between Breadcrumbs"
+msgstr "导航路径之间的分隔符"
+
+#: inc/customizer/theme-options-9-excerpt.php:18
+msgid "Excerpt Options"
+msgstr "摘录选项 Excerpt"
+
+#: inc/customizer/theme-options-9-excerpt.php:25
+msgid "Excerpt length. Default is 30 words"
+msgstr "摘录长度， 默认值为30个字"
+
+#: inc/customizer/theme-options-9-excerpt.php:32
+msgid "Excerpt Length (words)"
+msgstr "摘录长度（单词）"
+
+#: inc/customizer/theme-options-9-excerpt.php:40
+msgid "Continue reading..."
+msgstr "阅读更多..."
+
+#: inc/customizer/theme-options-9-excerpt.php:42
+msgid "Read More Text"
+msgstr "阅读更多文字"
+
+#: inc/customizer/theme-options.php:17
+msgid "Theme Options"
+msgstr "主题选项"
+
+#: inc/customizer/theme-options.php:25
+msgid "Check to reset fonts"
+msgstr "选中以重置字体"
+
+#: inc/customizer/theme-options.php:33
+msgid "News"
+msgstr "新闻"
+
+#: inc/customizer/theme-options.php:35
+msgid "Latest Posts Title"
+msgstr "最新日志标题"
+
+#: inc/featured-slider.php:42
+msgid "Previous Slide"
+msgstr "上一个"
+
+#: inc/featured-slider.php:43
+msgid "Next Slide"
+msgstr "下一个"
+
+#: inc/header-background-color.php:62
+msgid "Default Header Image"
+msgstr "默认页眉图像"
+
+#: inc/header-background-color.php:67
+msgid "Another Header Image"
+msgstr "另一个页眉图片"
+
+#: inc/header-background-color.php:133
+msgid "Play background video"
+msgstr "播放背景视频"
+
+#: inc/header-background-color.php:136
+msgid "Pause background video"
+msgstr "暂停背景视频"
+
+#: inc/icon-functions.php:38
+msgid "Please define default parameters in the form of an array."
+msgstr "请以数组的形式定义默认参数。"
+
+#: inc/icon-functions.php:43
+msgid "Please define an SVG icon filename."
+msgstr "请定义SVG图标文件名。"
+
+#: inc/metabox/metabox.php:78 inc/metabox/metabox.php:84
+msgid "Default"
+msgstr "默认"
+
+#: inc/metabox/metabox.php:80 inc/metabox/metabox.php:85
+msgid "Disable"
+msgstr "禁用"
+
+#: inc/metabox/metabox.php:96
+msgid "Header Featured Image Options"
+msgstr "页眉特色图像选项"
+
+#: inc/metabox/metabox.php:97
+msgid "Single Page/Post Image Layout "
+msgstr "单页面/日志图像布局"
+
+#: inc/metabox/metabox.php:210
+msgid "Mipress Options"
+msgstr "Mipress Options"
+
+#: inc/template-functions.php:150 inc/template-functions.php:173
+#: inc/template-functions.php:200
+msgid "Continue reading"
+msgstr "阅读更多"
+
+#: inc/template-functions.php:290
+msgid "Scroll Up"
+msgstr "Scroll Up"
+
+#: inc/template-functions.php:316
+msgid "Previous Page"
+msgstr "上一页"
+
+#: inc/template-functions.php:317
+msgid "Next Page"
+msgstr "下一页"
+
+#: inc/template-functions.php:446
+msgid "Social Links Menu"
+msgstr "社交连接菜单"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:17 inc/template-tags.php:50
+msgid ", "
+msgstr ", "
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:57
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:60
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:70
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "留下一条评论<span class=\"screen-reader-text\"> 在 %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:87 template-parts/content/content-page.php:42
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "编辑 <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/template-tags.php:114
+#, php-format
+msgctxt "1: Year, 2: Site Title with home URL, 3: Privacy Policy Link"
+msgid "Copyright &copy; %1$s %2$s %3$s"
+msgstr "Copyright &copy; %1$s %2$s %3$s"
+
+#: inc/template-tags.php:114
+msgid "by"
+msgstr "by"
+
+#: inc/widget-social-icons.php:33
+msgid "Use this widget to add short information and Social Menu"
+msgstr "使用此小部件添加短信息和社交菜单"
+
+#: inc/widget-social-icons.php:42
+msgid "CT: Social Icons"
+msgstr "CT: 社交按钮图标"
+
+#: inc/widget-social-icons.php:111
+#, php-format
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr "还未创建菜单. <a href=\"%s\">创建</a>."
+
+#: inc/widget-social-icons.php:120
+msgid "Select Menu:"
+msgstr "选中菜单:"
+
+#: inc/widget-social-icons.php:122
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; 选择 &mdash;"
+
+#. translators: %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "搜索结果 for: %s"
+
+#: searchform.php:16
+msgctxt "label"
+msgid "Search for:"
+msgstr "搜索:"
+
+#: searchform.php:19
+msgctxt "submit button"
+msgid "Search"
+msgstr "搜索"
+
+#: single.php:23
+msgid "Previous Post"
+msgstr "上一篇"
+
+#: single.php:23 template-parts/project-slider/display-project-slider.php:55
+msgid "Previous"
+msgstr "上一条"
+
+#: single.php:24
+msgid "Next Post"
+msgstr "下一篇"
+
+#: single.php:24 template-parts/project-slider/display-project-slider.php:56
+msgid "Next"
+msgstr "下一条"
+
+#: template-parts/author-bio.php:26
+msgid "Author:"
+msgstr "作者:"
+
+#: template-parts/author-bio.php:31
+#, php-format
+msgid "View all posts by %s"
+msgstr "查看所有日志 by %s"
+
+#: template-parts/content/content-none.php:15
+msgid "Nothing Found"
+msgstr "没有找到内容!"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content/content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "开始发布您的第一篇日志? <a href=\"%1$s\">这里开始</a>."
+
+#: template-parts/content/content-none.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "对不起，但没有匹配您的搜索条件。请用一些不同的关键字再试一次。"
+
+#: template-parts/content/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "看来我们找不到你要找的东西了。也许搜索会有所帮助。"
+
+#: template-parts/content/content-page.php:25
+#: template-parts/content/content-single.php:37
+#: template-parts/content/content.php:53
+#: template-parts/hero-content/post-type-hero.php:68
+msgid "Pages:"
+msgstr "页面:"
+
+#: template-parts/content/content.php:42
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "阅读更多<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: Name of current post
+#: template-parts/hero-content/post-type-hero.php:84
+#, php-format
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+#: template-parts/navigation/navigation-primary.php:12
+msgid "Menu"
+msgstr "菜单"
+
+#: template-parts/navigation/navigation-primary.php:17
+#: template-parts/navigation/navigation-primary.php:26
+msgid "Primary Menu"
+msgstr "首要菜单"
+
+#. Theme Name of the plugin/theme
+#. Author of the plugin/theme
+msgid "Mipress"
+msgstr "Mipress"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://missra.com/"
+msgstr "http://missra.com/"
+
+#~ msgid "Homepage / Frontpage Options"
+#~ msgstr "首页内容 Home/Front"
