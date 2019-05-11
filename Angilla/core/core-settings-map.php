@@ -1226,7 +1226,7 @@ function angi_fn_front_page_option_map( $get_default = null ) {
                             'priority'      => 50,
           ),
           'tc_home_slider_overlay'  =>  array(
-                            'default'       => 'on',
+                            'default'       => 'off',
                             'control'     => 'ANGI_controls' ,
                             'label'         => __( "Apply a dark overlay on your slider's images" , 'angilla' ),
                             'section'       => 'frontpage_sec',
