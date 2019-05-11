@@ -196,7 +196,7 @@ if ( ! class_exists( 'ANGI_admin_init' ) ) :
 
         if ( class_exists('ANGI_resources_fonts') && is_object(ANGI_resources_fonts::$instance) ) {
           //fonts
-          $_css  .= ANGI_resources_fonts::$instance -> angi_fn_write_fonts_inline_css( '', $_mce_body_context );
+          $_css .= ANGI_resources_fonts::$instance -> angi_fn_write_fonts_inline_css( '', $_mce_body_context );
         }
 
         //skin

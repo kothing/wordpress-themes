@@ -461,7 +461,6 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
   class ANGI_plugins_compat {
     //Access any method or var of the class with classname::$instance -> var or method():
     static $instance;
-    //credits @Srdjan
     public $default_language, $current_language;
 
     function __construct () {
@@ -880,7 +879,6 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
     * @since Angilla 1.0
     */
     private function angi_fn_set_wpml_compat() {
-      //credits : @Srdjan
       $this->default_language = apply_filters( 'wpml_default_language', null );
       $this->current_language = apply_filters( 'wpml_current_language', null );
 
@@ -904,7 +902,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
           $options_to_translate = ANGI_plugins_compat::$instance -> angi_fn_get_string_options_to_translate();
 
           $option_name_assoc = apply_filters( 'tc_wpml_options_names_config', array(
- //           'tc_front_slider'              => 'Front page slider name', //Handled in a different way by Srdjan
+            //'tc_front_slider'              => 'Front page slider name'
             'tc_posts_slider_button_text'  => 'Posts slider button text',
             'tc_tag_title'                 => 'Tag pages title',
             'tc_cat_title'                 => 'Category pages title',
@@ -943,19 +941,16 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
         return apply_filters( 'wpml_object_id', $object_id, $type, true );
       }
 
-      //credits: @Srdjan -> filter the slides in the current language
+      //filter the slides in the current language
       function angi_fn_wpml_sliders_filter( $sliders ) {
         if ( is_array( $sliders ) )
           foreach ( $sliders as $name => $slides ) {
             foreach ( $slides as $key => $attachment_id ) {
               // Get current slide language
-              $slide_language = apply_filters( 'wpml_element_language_code',
-                            null, array('element_id' => $attachment_id,
-                                'element_type' => 'attachment') );
+              $slide_language = apply_filters( 'wpml_element_language_code', null, array('element_id' => $attachment_id, 'element_type' => 'attachment') );
               if ( ANGI_plugins_compat::$instance->current_language != $slide_language ) {
                 // Replace with translated slide
-                $translated_slide_id = apply_filters( 'wpml_object_id',
-                                $attachment_id, 'attachment', false );
+                $translated_slide_id = apply_filters( 'wpml_object_id', $attachment_id, 'attachment', false );
                 if ( $translated_slide_id )
                   $sliders[$name][$key] = $translated_slide_id;
               }
@@ -965,18 +960,18 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
 
         return $sliders;
       }
-      //credits: @Srdjan,
+
       function angi_fn_wpml_add_theme_options_filter() {
         add_filter( 'option_tc_theme_options', 'angi_fn_wpml_theme_options_filter', 99 );
       }
-      //credits: @Srdjan
+
       function angi_fn_wpml_theme_options_filter( $options ) {
         if ( isset( $options['tc_sliders'] ) ) {
             $options['tc_sliders'] = angi_fn_wpml_sliders_filter( $options['tc_sliders'] );
         }
         return $options;
       }
-      //credits: @Srdjan
+
       function angi_fn_wpml_edit_attachment_action( $attachment_id ) {
         $languages = apply_filters( 'wpml_active_languages', array() );
         // TODO check which meta keys are a must
@@ -1045,7 +1040,6 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
           return $options;
         }
 
-        //credits @Srdjan
         // Filter slides in admin screens
         add_action( '__attachment_slider_infos', 'angi_fn_wpml_add_theme_options_filter', 9 );
         add_action( '__post_slider_infos', 'angi_fn_wpml_add_theme_options_filter', 9 );
@@ -1085,7 +1079,7 @@ if ( ! class_exists( 'ANGI_plugins_compat' ) ) :
           foreach ( $tc_wpml_options as $tc_wpml_option )
             add_filter("tc_opt_{$tc_wpml_option}", 'angi_fn_wpml_t_opt', 20 );
 
-          //translates sliders? credits @Srdjan
+          //translates sliders
           add_filter( 'tc_opt_tc_sliders', 'angi_fn_wpml_sliders_filter', 99 );
 
         }
