@@ -388,6 +388,7 @@ function setup_sidebar_menu_popover() {
       showArrow: true,
       openDelay: 20,
       closeDelay: 20,
+      offset: 16,
       disabled: public_vars.$sidebar.hasClass("collapsed") ? false : true
     });
     public_vars.$sideMenuPopover.push(pop);
